@@ -1,0 +1,1609 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth scroll-pt-24">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Meng Yong Seafood | Premium Mangrove Oysters Malaysia</title>
+    <meta name="description" content="Premium, single-seed oysters cultivated in the nutrient-rich sanctuary of Bagan Pasir, Perak. Lab-certified safe, fresh harvest, and express delivery across Malaysia.">
+    <meta name="keywords" content="oysters malaysia, fresh oysters perak, mangrove oysters, premium seafood delivery, oyster farm bagan pasir, meng yong seafood, live oysters">
+    <meta name="author" content="Meng Yong Seafood Sdn. Bhd.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://mengyongseafood.com/">
+    
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mengyongseafood.com/">
+    <meta property="og:title" content="Meng Yong Seafood | Premium BP Oysters">
+    <meta property="og:description" content="From Mangrove To Masterpiece. Premium single-seed oysters from Bagan Pasir, Perak.">
+    <meta property="og:image" content="https://mengyongseafood.com/images/preview.jpg">
+    <link rel="preload" as="image" href="images/hero-bg.jpg">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Meng Yong Seafood",
+      "image": "https://mengyongseafood.com/images/logo.png",
+	  "logo": "https://mengyongseafood.com/images/logo.png",
+      "description": "Premium, single-seed oysters cultivated in the nutrient-rich sanctuary of Bagan Pasir, Perak. Lab-certified safe and delivered fresh.",
+      "@id": "https://mengyongseafood.com/",
+      "url": "https://mengyongseafood.com/",
+      "telephone": "+60165250543",
+      "priceRange": "RM8 - RM12",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Bagan Pasir",
+        "addressLocality": "Perak",
+        "addressCountry": "MY"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 3.88,
+        "longitude": 100.67
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+        ],
+        "opens": "09:00",
+        "closes": "18:00"
+      }
+    }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'oyster-dark': '#1a1c20',
+                        'oyster-gray': '#2d3036',
+                        'mangrove-green': '#3d4c41',
+                        'sand-light': '#f5f3ef',
+                        'sand-accent': '#d4c5a9',
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Lato"', 'sans-serif'],
+                    },
+                    animation: {
+                        marquee: 'marquee 40s linear infinite',
+                    },
+                    keyframes: {
+                        marquee: {
+                            '0%': { transform: 'translateX(0)' },
+                            '100%': { transform: 'translateX(-50%)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .text-shadow { text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); }
+        .hero-gradient { background: linear-gradient(to bottom, rgba(26,28,32,0.3) 0%, rgba(26,28,32,0.8) 100%); }
+        input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+        .marquee-container { display: flex; width: fit-content; }
+    </style>
+</head>
+<body class="bg-sand-light text-oyster-dark font-sans antialiased selection:bg-sand-accent selection:text-oyster-dark relative">
+
+    <div id="promo-banner" class="fixed top-0 left-0 w-full bg-sand-accent text-oyster-dark z-[60] overflow-hidden h-8 flex items-center hidden">
+        <div class="marquee-container animate-marquee" id="marquee-track">
+            <div class="flex items-center whitespace-nowrap px-4" id="promo-content-group">
+                <span class="mx-4 font-bold uppercase tracking-widest text-xs promo-text-en"></span>
+                <span class="mx-4">|</span>
+                <span class="mx-4 font-bold uppercase tracking-widest text-xs promo-text-bm"></span>
+                <span class="mx-4">|</span>
+                <span class="mx-4 font-bold uppercase tracking-widest text-xs promo-text-cn"></span>
+            </div>
+            </div>
+    </div>
+
+    <button onclick="toggleCart()" class="fixed bottom-6 right-6 z-50 bg-oyster-dark text-white p-4 rounded-full shadow-2xl hover:bg-mangrove-green transition-all hover:scale-110 flex items-center justify-center group border-2 border-sand-accent" aria-label="View Shopping Cart">
+        <div class="relative">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+            <span id="cart-count-badge" class="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center hidden">0</span>
+        </div>
+        <span class="ml-2 font-bold whitespace-nowrap" data-i18n="btn_view_cart">View Cart</span>
+    </button>
+
+    <div id="cart-modal" class="fixed inset-0 z-[70] hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <div class="absolute inset-0 bg-gray-900 bg-opacity-75 transition-opacity" onclick="toggleCart()"></div>
+        <div class="fixed inset-y-0 right-0 z-10 w-full max-w-md overflow-y-auto bg-white shadow-xl transform transition-transform duration-300 translate-x-full" id="cart-panel">
+            <div class="flex flex-col h-full">
+                <div class="px-6 py-4 bg-oyster-dark text-white flex justify-between items-center">
+                    <h2 class="text-xl font-serif" data-i18n="cart_title">Your Order</h2>
+                    <button type="button" class="text-gray-400 hover:text-white" onclick="toggleCart()">
+                        <span class="sr-only">Close</span>
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+                    </button>
+                </div>
+                <div class="flex-1 px-6 py-6 overflow-y-auto">
+                    <div id="cart-items-container" class="space-y-6">
+                        <div class="text-center text-gray-500 py-8" data-i18n="cart_empty">Your cart is empty.</div>
+                    </div>
+                    <div id="min-order-warning" class="mt-6 p-3 bg-red-50 border border-red-200 text-red-700 text-sm rounded-sm hidden">
+                        ⚠️ <span data-i18n="cart_min_warning">Minimum order is 12 pieces total.</span>
+                    </div>
+
+                    <div class="border-t border-gray-200 mt-6 pt-6">
+                        <h4 class="font-bold text-oyster-dark text-sm mb-4 uppercase tracking-wide" data-i18n="cart_extras_title">Extras</h4>
+                        <label class="flex items-center space-x-3 p-3 border border-gray-200 rounded-sm cursor-pointer hover:bg-gray-50 transition-colors mb-4" id="paid-knife-option">
+                            <input type="checkbox" id="addon-knife" class="form-checkbox h-5 w-5 text-sand-accent focus:ring-sand-accent rounded border-gray-300" onchange="updateCartUI()">
+                            <div class="flex-1">
+                                <span class="text-sm font-bold text-oyster-dark block" data-i18n="addon_knife_title">Add Professional Shucker</span>
+                                <span class="text-xs text-gray-500" data-i18n="addon_knife_desc">Essential tool for opening oysters safely</span>
+                            </div>
+                            <span class="text-sm font-bold text-oyster-dark">+RM 10.00</span>
+                        </label>
+                        <div id="free-gift-alert" class="hidden p-3 bg-green-50 border border-green-200 rounded-sm flex items-center mb-4">
+                            <span class="text-xl mr-3">🎁</span>
+                            <div>
+                                <p class="text-sm font-bold text-green-800">Free Gift Unlocked!</p>
+                                <p class="text-xs text-green-700">Professional Oyster Knife included free.</p>
+                            </div>
+                        </div>
+                        <div class="mb-2">
+                            <label for="order-remarks" class="block text-sm font-medium text-gray-700 mb-2" data-i18n="cart_remarks_label">Special Instructions</label>
+                            <textarea id="order-remarks" rows="2" class="w-full border-gray-300 rounded-md shadow-sm focus:ring-sand-accent p-2 border text-sm" placeholder="E.g. specific timing, gate code..."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-gray-200 mt-6 pt-6">
+                        <div class="bg-gray-50 p-4 rounded-sm border border-gray-200 mb-6">
+                            <h4 class="font-bold text-oyster-dark text-sm mb-2 uppercase tracking-wide" data-i18n="pay_title">Manual Payment Instructions</h4>
+                            <p class="text-xs text-gray-600 mb-2" data-i18n="pay_bank">Bank: <strong>Hong Leong Bank</strong><br>Acc: <strong>15200043477</strong><br>Name: <strong>Meng Yong Seafood Sdn Bhd</strong></p>
+                            <p class="text-xs text-gray-500 italic" data-i18n="pay_note">*Please attach receipt in WhatsApp after clicking 'Send Order'.</p>
+                        </div>
+                        <div class="mb-6">
+                            <label for="delivery-date" class="block text-sm font-medium text-gray-700 mb-2" data-i18n="cart_date_label">Preferred Delivery Date</label>
+                            <input type="date" id="delivery-date" class="w-full border-gray-300 rounded-md shadow-sm p-2 border" onchange="updateCartUI()">
+                            <div class="flex flex-col mt-1 space-y-1">
+                                <p class="text-xs text-gray-500" id="delivery-note" data-i18n="cart_delivery_note">Delivery Fee: RM20</p>
+                                <p class="text-xs text-gray-400" id="cutoff-note"></p> <p class="text-xs text-red-500 italic" data-i18n="cart_no_monday">* No delivery on Mondays</p>
+                                <p class="text-xs text-red-600 font-bold hidden" id="holiday-warning"></p>
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-2 mb-6">
+                            <div class="flex justify-between text-sm text-gray-600"><p>Subtotal</p><p>RM <span id="cart-subtotal">0.00</span></p></div>
+                            <div class="flex justify-between text-sm text-gray-600">
+                                <p>Delivery Fee <span id="free-delivery-badge" class="hidden text-xs bg-green-100 text-green-800 px-1 rounded ml-1">FREE</span></p>
+                                <div id="delivery-fee-display" class="text-right">RM <span id="cart-delivery-fee">0.00</span></div>
+                            </div>
+                            <div id="cart-addon-row" class="flex justify-between text-sm text-gray-600 hidden"><p>Professional Shucker</p><p>RM 10.00</p></div>
+                            <div id="cart-free-gift-row" class="flex justify-between text-sm text-green-700 font-bold hidden">
+                                <p>🎁 Free Oyster Knife</p>
+                                <div class="text-right"><span class="block text-xs text-gray-400 line-through font-normal">RM 10.00</span><span>RM 0.00</span></div>
+                            </div>
+                            <div class="flex justify-between text-lg font-bold text-oyster-dark border-t pt-2 mt-2">
+                                <p data-i18n="cart_total">Total</p>
+                                <p>RM <span id="cart-total-price">0.00</span></p>
+                            </div>
+                        </div>
+                        <button id="checkout-btn" onclick="processCheckout()" class="w-full flex justify-center items-center px-6 py-3 border border-transparent rounded-sm shadow-sm text-base font-medium text-white bg-[#25D366] hover:bg-[#128C7E] disabled:opacity-50 disabled:cursor-not-allowed transition-colors">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.008-.57-.008-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                            <span data-i18n="cart_send_wa">Send Order via WhatsApp</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="terms-modal" class="fixed inset-0 z-[70] hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <div class="absolute inset-0 bg-gray-900 bg-opacity-75 transition-opacity" onclick="toggleTerms()"></div>
+        
+        <div class="fixed inset-0 z-10 overflow-y-auto">
+            <div class="flex min-h-full items-center justify-center p-4 text-center sm:p-0">
+                <div class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
+                    <div class="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
+                        <div class="sm:flex sm:items-start">
+                            <div class="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left w-full">
+                                <h3 class="text-xl font-serif leading-6 text-oyster-dark mb-4" id="modal-title">Terms & Policies</h3>
+                                <div class="mt-2 text-sm text-gray-600 space-y-4 h-96 overflow-y-auto pr-2">
+                                    
+                                    <div>
+                                        <h4 class="font-bold text-oyster-dark">1. Freshness Guarantee</h4>
+                                        <p>We guarantee our oysters are live at the time of dispatch. Any quality issues must be reported via WhatsApp with photo evidence within <strong>2 hours</strong> of receiving the delivery. Claims made after this window will not be accepted.</p>
+                                    </div>
+
+                                    <div>
+                                        <h4 class="font-bold text-oyster-dark">2. Delivery Responsibility</h4>
+                                        <p>Customers must ensure someone is available to receive the delivery. Meng Yong Seafood is not liable for spoilage caused by missed deliveries, wrong addresses, or packages left unattended at guardhouses/gates.</p>
+                                    </div>
+
+                                    <div>
+                                        <h4 class="font-bold text-oyster-dark">3. Payment & Cancellation</h4>
+                                        <p>Orders are confirmed only upon receipt of full payment. Cancellations are not allowed once harvest has begun (usually 24 hours before delivery date) as our oysters are harvested to order.</p>
+                                    </div>
+
+                                    <div>
+                                        <h4 class="font-bold text-oyster-dark">4. Health Disclaimer</h4>
+                                        <p>While our oysters are lab-tested and UV-depurated, consuming raw shellfish carries inherent risks, especially for individuals with certain medical conditions. Consumption is at the customer's own risk.</p>
+                                    </div>
+
+                                    <div>
+                                        <h4 class="font-bold text-oyster-dark">5. Delivery Area</h4>
+                                        <p>Next Day Delivery covers major cities in West Malaysia. If your location is out of coverage, we will contact you for a refund or alternative arrangement.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+                        <button type="button" class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto" onclick="toggleTerms()">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="fixed w-full z-40 top-8 transition-all duration-300 bg-oyster-dark/95 backdrop-blur-md border-b border-white/10" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0">
+                    <a href="#" class="flex items-center">
+                        <span class="font-serif text-2xl text-white tracking-widest uppercase hover:text-sand-accent transition-colors">
+                            <img src="images/logo.png" alt="Meng Yong Logo" class="h-16 w-auto">
+                        </span>
+                    </a>
+                </div>
+                
+                <div class="hidden md:flex items-center">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#about" class="text-sm font-medium text-gray-300 hover:text-white transition-colors uppercase tracking-wider" data-i18n="nav_about">About</a>
+                        <a href="#philosophy" class="text-sm font-medium text-gray-300 hover:text-white transition-colors uppercase tracking-wider" data-i18n="nav_farm">Our Farm</a>
+                        <a href="#collection" class="text-sm font-medium text-gray-300 hover:text-white transition-colors uppercase tracking-wider" data-i18n="nav_collection">The Collection</a>
+                        <a href="#safety" class="text-sm font-medium text-gray-300 hover:text-white transition-colors uppercase tracking-wider" data-i18n="nav_safety">Safety</a>
+                    </div>
+
+                    <div class="ml-8 flex items-center space-x-3 text-xs uppercase tracking-widest text-gray-400 border-l border-gray-700 pl-6">
+                        <button onclick="setLanguage('en')" class="hover:text-white transition-colors font-bold text-sand-accent" id="lang-btn-en">EN</button>
+                        <span>|</span>
+                        <button onclick="setLanguage('bm')" class="hover:text-white transition-colors" id="lang-btn-bm">BM</button>
+                        <span>|</span>
+                        <button onclick="setLanguage('cn')" class="hover:text-white transition-colors" id="lang-btn-cn">中文</button>
+                    </div>
+
+                    <button onclick="toggleCart()" class="ml-6 px-5 py-2 text-sm font-medium text-oyster-dark bg-sand-accent hover:bg-white transition-colors uppercase tracking-wider rounded-sm flex items-center">
+                        <span data-i18n="nav_cart">Cart</span>
+                        <span id="nav-cart-badge" class="ml-2 bg-oyster-dark text-white text-xs px-2 py-0.5 rounded-full hidden">0</span>
+                    </button>
+                </div>
+
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none">
+                        <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="hidden md:hidden bg-oyster-dark border-t border-gray-800" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#about" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium" data-i18n="nav_about">About</a>
+                <a href="#philosophy" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium" data-i18n="nav_farm">Our Farm</a>
+                <a href="#collection" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium" data-i18n="nav_collection">The Collection</a>
+                <a href="#safety" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium" data-i18n="nav_safety">Safety Data</a>
+                
+                <div class="flex space-x-4 px-3 py-4 text-gray-400 text-sm">
+                    <button onclick="setLanguage('en')" class="hover:text-white font-bold text-sand-accent">EN</button>
+                    <button onclick="setLanguage('bm')" class="hover:text-white">BM</button>
+                    <button onclick="setLanguage('cn')" class="hover:text-white">中文</button>
+                </div>
+
+                <button onclick="toggleCart()" class="text-sand-accent hover:text-white block px-3 py-2 rounded-md text-base font-medium w-full text-left" data-i18n="nav_view_cart">View Cart</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative h-screen flex items-center justify-center overflow-hidden mt-8">
+        <div class="absolute inset-0 z-0">
+            <img src="images/hero-bg.jpg" 
+                 alt="Bagan Pasir Estuary" 
+                 class="w-full h-full object-cover">
+            <div class="absolute inset-0 hero-gradient"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto mt-16">
+            <p class="text-sand-accent uppercase tracking-[0.2em] text-sm font-medium md:text-base mb-4 animate-fade-in-up" data-i18n="hero_eyebrow">
+                Premium BP Oysters
+            </p>
+            <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl text-white mb-6 leading-tight text-shadow">
+                <span data-i18n="hero_title_1">From Mangrove</span><br/>
+                <span data-i18n="hero_title_2">To</span> <i class="font-light" data-i18n="hero_title_3">Masterpiece</i>
+            </h1>
+            <p class="text-gray-300 text-lg md:text-xl font-medium max-w-2xl mx-auto mb-10 leading-relaxed" data-i18n="hero_subtitle">
+                Premium, single-seed oysters cultivated in the nutrient-rich sanctuary of Bagan Pasir, Perak.
+            </p>
+            
+            <div class="flex flex-col md:flex-row gap-4 justify-center items-center">
+                <a href="#collection" class="px-8 py-3 border border-white text-white hover:bg-white hover:text-oyster-dark transition-all duration-300 uppercase tracking-widest text-sm font-semibold" data-i18n="btn_collection">
+                    View Collection
+                </a>
+                <div class="flex items-center text-xs text-sand-accent uppercase tracking-widest border border-sand-accent/30 bg-black/30 px-4 py-3 backdrop-blur-sm">
+                    <span class="mr-2">✓</span> <span data-i18n="badge_safety">Lab-Certified Safety</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="py-24 relative overflow-hidden bg-sand-light">
+        <div class="absolute inset-0 z-0">
+             <img src="images/about-bg.jpg" 
+                  alt="Farm Landscape" 
+                  class="w-full h-full object-cover opacity-20" loading="lazy">
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-sm uppercase tracking-widest text-gray-500" data-i18n="about_subtitle">Our Story</span>
+                <h2 class="font-serif text-4xl text-oyster-dark mt-2" data-i18n="about_title">About Meng Yong Seafood</h2>
+                <div class="w-20 h-0.5 bg-sand-accent mx-auto mt-6"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
+                <div>
+                    <h3 class="font-serif text-2xl text-oyster-dark mb-4" data-i18n="identity_title">Who We Are</h3>
+                    <p class="text-gray-600 text-lg leading-relaxed mb-6" data-i18n="identity_desc">
+                        Meng Yong Seafood is a premier aquaculture enterprise based in the nutrient-rich wetlands of Bagan Pasir, Perak. We specialize in the sustainable cultivation of premium mangrove oysters, bridging the gap between traditional farming wisdom and modern food safety science.
+                    </p>
+                    <p class="text-gray-600 text-lg leading-relaxed" data-i18n="identity_mission">
+                        Our mission is simple: To put Malaysian oysters on the world map by delivering a product that is not only delicious but rigorously lab-tested and safe for raw consumption.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="font-serif text-2xl text-oyster-dark mb-4" data-i18n="heritage_title">Our Heritage</h3>
+                    <p class="text-gray-600 text-lg leading-relaxed mb-6" data-i18n="heritage_desc">
+                        Bagan Pasir, Perak is our home and our history. For over 30 years, this estuarine community has been the heart of the state's cockle farming industry. We are the next generation of that legacy.
+                    </p>
+                    <p class="text-gray-600 text-lg leading-relaxed" data-i18n="heritage_connect">
+                        By adapting deep local knowledge of tides and currents to modern oyster farming, we have turned these historic waters into a sanctuary for the "Premium BP Oyster"—a masterpiece of flavor and texture.
+                    </p>
+                    
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="philosophy" class="py-24 relative overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="images/philosophy-bg.jpg" 
+                 alt="Water Texture Background" 
+                 class="w-full h-full object-cover" loading="lazy">
+            <div class="absolute inset-0 bg-white/80"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-4xl text-oyster-dark mb-4" data-i18n="phil_title">The Estuarine Jewel</h2>
+                <div class="w-16 h-0.5 bg-sand-accent mx-auto"></div>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto italic" data-i18n="phil_quote">
+                    "Deep in the mangroves of Bagan Pasir, the water tells a story."
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                <div class="p-6 group hover:-translate-y-2 transition-transform duration-300">
+                    <div class="w-16 h-16 mx-auto mb-6 flex items-center justify-center rounded-full bg-sand-light text-oyster-dark border border-sand-accent/50">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4"/></svg>
+                    </div>
+                    <h3 class="font-serif text-xl mb-3 text-oyster-dark" data-i18n="feat1_title">Single-Seed Origins</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm" data-i18n="feat1_desc">
+                        Raised from hatchery-raised single-seed spat. This modern technique ensures a perfect, deep-cup shape and consistent meat quality.
+                    </p>
+                </div>
+
+                <div class="p-6 group hover:-translate-y-2 transition-transform duration-300">
+                    <div class="w-16 h-16 mx-auto mb-6 flex items-center justify-center rounded-full bg-sand-light text-oyster-dark border border-sand-accent/50">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/></svg>
+                    </div>
+                    <h3 class="font-serif text-xl mb-3 text-oyster-dark" data-i18n="feat4_title">Raft & Cage Control</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm" data-i18n="feat4_desc">
+                        Farmed on floating rafts and kept in specialized cages. This method allows for better quality control and protection during growth.
+                    </p>
+                </div>
+
+                <div class="p-6 group hover:-translate-y-2 transition-transform duration-300">
+                    <div class="w-16 h-16 mx-auto mb-6 flex items-center justify-center rounded-full bg-sand-light text-oyster-dark border border-sand-accent/50">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <h3 class="font-serif text-xl mb-3 text-oyster-dark" data-i18n="feat2_title">Mangrove Nurtured</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm" data-i18n="feat2_desc">
+                        Grown in the biodiverse Bagan Pasir estuary. The mixing of fresh river water and saltwater creates a unique, creamy sweetness.
+                    </p>
+                </div>
+
+                <div class="p-6 group hover:-translate-y-2 transition-transform duration-300">
+                    <div class="w-16 h-16 mx-auto mb-6 flex items-center justify-center rounded-full bg-sand-light text-oyster-dark border border-sand-accent/50">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <h3 class="font-serif text-xl mb-3 text-oyster-dark" data-i18n="feat3_title">Science-Backed Safety</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm" data-i18n="feat3_desc">
+                        We combine tradition with innovation. Post-harvest UV depuration and rigorous periodic lab testing ensure every shell is pristine.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="safety" class="py-24 bg-oyster-dark text-white relative overflow-hidden">
+        <div class="absolute inset-0 z-0">
+             <img src="https://images.unsplash.com/photo-1497290756760-23ac55edf36f?q=80&w=2574&auto=format&fit=crop" 
+                  alt="Deep Water Background" 
+                  class="w-full h-full object-cover" loading="lazy">
+             <div class="absolute inset-0 bg-oyster-dark/90"></div>
+        </div>
+
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 border border-white/5 rounded-full z-0"></div>
+        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-64 h-64 border border-white/5 rounded-full z-0"></div>
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                
+                <div>
+                    <span class="text-sand-accent uppercase tracking-widest text-sm font-bold" data-i18n="safety_subtitle">Lab-Certified Purity</span>
+                    <h2 class="font-serif text-4xl md:text-5xl mt-3 mb-6 leading-tight" data-i18n="safety_title">Zero Tolerance for Compromise.</h2>
+                    <p class="text-gray-400 text-lg mb-8 leading-relaxed" data-i18n="safety_desc">
+                        Our microbiological test results meet strict safety limits for ready-to-eat shellfish. We don't just guess; we verify.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-6 mb-8">
+                        <div class="border-l border-sand-accent pl-4">
+                            <span class="block text-4xl font-serif text-white">0</span>
+                            <span class="text-xs uppercase tracking-widest text-gray-400">E. Coli (MPN/g)</span>
+                        </div>
+                        <div class="border-l border-sand-accent pl-4">
+                            <span class="block text-4xl font-serif text-white">0</span>
+                            <span class="text-xs uppercase tracking-widest text-gray-400">Salmonella</span>
+                        </div>
+                        <div class="border-l border-sand-accent pl-4">
+                            <span class="block text-4xl font-serif text-white" data-i18n="val_absent">Absent</span>
+                            <span class="text-xs uppercase tracking-widest text-gray-400">Vibrio Cholerae</span>
+                        </div>
+                        <div class="border-l border-sand-accent pl-4">
+                            <span class="block text-4xl font-serif text-white">UV</span>
+                            <span class="text-xs uppercase tracking-widest text-gray-400" data-i18n="val_uv">Depuration System</span>
+                        </div>
+                    </div>
+
+                    <p class="text-xs text-gray-500 font-mono">
+                        Reference: Report No. BC/L2508/0323 • Issued 11 Aug 2025
+                    </p>
+                </div>
+
+                <div class="relative">
+                    <div class="absolute inset-0 bg-sand-accent transform translate-x-4 translate-y-4 rounded-sm"></div>
+                    <img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?q=80&w=2670&auto=format&fit=crop" alt="Lab Testing & Safety" class="relative rounded-sm shadow-2xl grayscale hover:grayscale-0 transition-all duration-700" loading="lazy">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="seasonal-special" class="py-24 bg-red-50 border-y border-red-100 hidden">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-12">
+                 <span class="bg-red-800 text-white px-4 py-1 text-xs font-bold uppercase tracking-widest rounded-full">Limited Time Offer</span>
+                 <h2 class="font-serif text-4xl text-red-900 mt-4" data-i18n="prod_xmas_name">Christmas Bundle</h2>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-xl overflow-hidden border border-red-100 flex flex-col md:flex-row">
+                <div class="md:w-1/2 relative h-96 md:h-auto">
+                     <img src="images/christmas-bundle.jpg" alt="Christmas Platter" class="absolute inset-0 w-full h-full object-cover">
+                </div>
+                <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
+                    <h3 class="font-serif text-3xl text-oyster-dark mb-4" data-i18n="prod_xmas_name">Christmas Bundle</h3>
+                    <p class="text-sand-accent uppercase text-xs tracking-widest font-bold mb-4" data-i18n="prod_xmas_size">24 Pieces Total</p>
+                    <p class="text-gray-600 text-lg mb-8 leading-relaxed" data-i18n="prod_xmas_desc">
+                        6 Large (The Grand) + 18 Medium (The Signature). The ultimate festive sharing platter.
+                    </p>
+                    <div class="flex items-center justify-between border-t border-gray-100 pt-6">
+                        <span class="text-3xl font-bold text-red-900">RM 252.00</span>
+                        <div class="flex items-center border border-gray-300 rounded-sm overflow-hidden bg-white">
+                            <button onclick="updateCart('prod_xmas', -1)" class="px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-600 border-r border-gray-200">-</button>
+                            <input type="number" id="qty-prod_xmas" value="0" min="0" class="w-16 text-center border-none focus:ring-0 p-1 text-base font-bold text-oyster-dark appearance-none" onchange="manualUpdateCart('prod_xmas', this.value)">
+                            <button onclick="updateCart('prod_xmas', 1)" class="px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-600 border-l border-gray-200">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="collection" class="py-24 relative overflow-hidden border-y border-sand-accent/30">
+        <div class="absolute inset-0 z-0">
+            <img src="images/collection-bg.jpg" 
+                 alt="Sand Texture Background" 
+                 class="w-full h-full object-cover opacity-50" loading="lazy">
+            <div class="absolute inset-0 bg-sand-light/95"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div>
+                    <span class="text-sm uppercase tracking-widest text-gray-500" data-i18n="col_subtitle">Curated Harvest</span>
+                    <h2 class="font-serif text-4xl text-oyster-dark mt-2" data-i18n="col_title">The Collection</h2>
+                </div>
+            </div>
+
+            <div id="collection-grid" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 shadow-sm hover:shadow-xl transition-shadow duration-300">
+                    <div class="aspect-w-1 aspect-h-1 mb-6 bg-gray-100 overflow-hidden">
+                        <img src="images/oyster-cocktail.jpg" alt="Cocktail Oyster" class="object-cover w-full h-64 hover:scale-105 transition-transform duration-700" loading="lazy">
+                    </div>
+                    <h3 class="font-serif text-2xl text-oyster-dark" data-i18n="prod1_name">The Aperitif</h3>
+                    <p class="text-sand-accent uppercase text-xs tracking-widest font-bold mt-1 mb-4" data-i18n="prod1_size">Cocktail Size (~2")</p>
+                    <p class="text-gray-600 mb-6 text-sm" data-i18n="prod1_desc">
+                        Delicate and briny. The perfect raw tasting start. Ideal for parties and first-time tasters.
+                    </p>
+                    
+                    <div class="mt-4 flex items-center justify-between">
+                        <span class="text-lg font-bold text-oyster-dark">RM 8.00<span class="text-xs font-normal text-gray-500">/pc</span></span>
+                        <div class="flex items-center border border-gray-300 rounded-sm overflow-hidden">
+                            <button onclick="updateCart('prod1', -1)" class="px-3 py-2 bg-gray-100 hover:bg-gray-200 text-gray-600 border-r border-gray-200">-</button>
+                            <input type="number" id="qty-prod1" value="0" min="0" class="w-12 text-center border-none focus:ring-0 p-1 text-sm font-bold text-oyster-dark appearance-none" onchange="manualUpdateCart('prod1', this.value)">
+                            <button onclick="updateCart('prod1', 1)" class="px-3 py-2 bg-gray-100 hover:bg-gray-200 text-gray-600 border-l border-gray-200">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 shadow-md transform md:-translate-y-4 hover:shadow-xl transition-all duration-300 relative border-t-4 border-sand-accent">
+                    <div class="absolute top-0 right-0 bg-sand-accent text-oyster-dark text-xs font-bold px-3 py-1 uppercase tracking-widest" data-i18n="badge_bestseller">
+                        Best Seller
+                    </div>
+                    <div class="aspect-w-1 aspect-h-1 mb-6 bg-gray-100 overflow-hidden">
+                        <img src="images/oyster-medium.jpg" alt="Medium Oyster" class="object-cover w-full h-64 hover:scale-105 transition-transform duration-700" loading="lazy">
+                    </div>
+                    <h3 class="font-serif text-2xl text-oyster-dark" data-i18n="prod2_name">The Signature</h3>
+                    <p class="text-sand-accent uppercase text-xs tracking-widest font-bold mt-1 mb-4" data-i18n="prod2_size">Medium Size (~3")</p>
+                    <p class="text-gray-600 mb-6 text-sm" data-i18n="prod2_desc">
+                        Our most balanced profile. Smooth, crispy meat with a sweet finish. The chef's choice.
+                    </p>
+                    
+                    <div class="mt-4 flex items-center justify-between">
+                        <span class="text-lg font-bold text-oyster-dark">RM 10.00<span class="text-xs font-normal text-gray-500">/pc</span></span>
+                        <div class="flex items-center border border-gray-300 rounded-sm overflow-hidden">
+                            <button onclick="updateCart('prod2', -1)" class="px-3 py-2 bg-gray-100 hover:bg-gray-200 text-gray-600 border-r border-gray-200">-</button>
+                            <input type="number" id="qty-prod2" value="0" min="0" class="w-12 text-center border-none focus:ring-0 p-1 text-sm font-bold text-oyster-dark appearance-none" onchange="manualUpdateCart('prod2', this.value)">
+                            <button onclick="updateCart('prod2', 1)" class="px-3 py-2 bg-gray-100 hover:bg-gray-200 text-gray-600 border-l border-gray-200">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 shadow-sm hover:shadow-xl transition-shadow duration-300">
+                    <div class="aspect-w-1 aspect-h-1 mb-6 bg-gray-100 overflow-hidden">
+                        <img src="images/oyster-large.jpg" alt="Large Oyster" class="object-cover w-full h-64 hover:scale-105 transition-transform duration-700" loading="lazy">
+                    </div>
+                    <h3 class="font-serif text-2xl text-oyster-dark" data-i18n="prod3_name">The Grand</h3>
+                    <p class="text-sand-accent uppercase text-xs tracking-widest font-bold mt-1 mb-4" data-i18n="prod3_size">Large Size (~4")</p>
+                    <p class="text-gray-600 mb-6 text-sm" data-i18n="prod3_desc">
+                        Bold and full-bodied. Substantial meat ideal for grilling, Rockefeller style, or rich preparations.
+                    </p>
+                    
+                    <div class="mt-4 flex items-center justify-between">
+                        <span class="text-lg font-bold text-oyster-dark">RM 12.00<span class="text-xs font-normal text-gray-500">/pc</span></span>
+                        <div class="flex items-center border border-gray-300 rounded-sm overflow-hidden">
+                            <button onclick="updateCart('prod3', -1)" class="px-3 py-2 bg-gray-100 hover:bg-gray-200 text-gray-600 border-r border-gray-200">-</button>
+                            <input type="number" id="qty-prod3" value="0" min="0" class="w-12 text-center border-none focus:ring-0 p-1 text-sm font-bold text-oyster-dark appearance-none" onchange="manualUpdateCart('prod3', this.value)">
+                            <button onclick="updateCart('prod3', 1)" class="px-3 py-2 bg-gray-100 hover:bg-gray-200 text-gray-600 border-l border-gray-200">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="order-process" class="py-24 bg-sand-light">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+             <div class="text-center mb-16">
+                <span class="text-sm uppercase tracking-widest text-gray-500" data-i18n="process_subtitle">Freshness Guaranteed</span>
+                <h2 class="font-serif text-4xl text-oyster-dark mt-2" data-i18n="process_title">How to Order</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
+                <div class="hidden md:block absolute top-12 left-0 w-full h-0.5 bg-sand-accent/30 -z-10"></div>
+
+                <div class="bg-white p-8 text-center shadow-sm relative">
+                    <div class="w-12 h-12 mx-auto bg-oyster-dark text-white rounded-full flex items-center justify-center font-serif text-xl mb-4">1</div>
+                    <h3 class="font-serif text-xl mb-2" data-i18n="step1_title">Order & Pay</h3>
+                    <p class="text-sm text-gray-600" data-i18n="step1_desc">Select your oysters and complete payment to secure your harvest slot.</p>
+                </div>
+
+                <div class="bg-white p-8 text-center shadow-sm relative">
+                    <div class="w-12 h-12 mx-auto bg-oyster-dark text-white rounded-full flex items-center justify-center font-serif text-xl mb-4">2</div>
+                    <h3 class="font-serif text-xl mb-2" data-i18n="step2_title">Morning Harvest</h3>
+                    <p class="text-sm text-gray-600" data-i18n="step2_desc">We harvest fresh in the morning <strong>only after</strong> payment is confirmed.</p>
+                </div>
+
+                 <div class="bg-white p-8 text-center shadow-sm relative">
+                    <div class="w-12 h-12 mx-auto bg-oyster-dark text-white rounded-full flex items-center justify-center font-serif text-xl mb-4">3</div>
+                    <h3 class="font-serif text-xl mb-2" data-i18n="step3_title">Express Dispatch</h3>
+                    <p class="text-sm text-gray-600" data-i18n="step3_desc">Packed live and dispatched immediately. <br/><span class="font-bold text-oyster-dark">Tue - Sun</span></p>
+                </div>
+
+                 <div class="bg-white p-8 text-center shadow-sm relative">
+                    <div class="w-12 h-12 mx-auto bg-oyster-dark text-white rounded-full flex items-center justify-center font-serif text-xl mb-4">4</div>
+                    <h3 class="font-serif text-xl mb-2" data-i18n="step4_title">Arrive & Enjoy</h3>
+                    <p class="text-sm text-gray-600" data-i18n="step4_desc">Receive live oysters at your doorstep the Next Day (Subject to location).</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                 <p class="text-oyster-gray italic text-sm border border-sand-accent/50 inline-block px-6 py-3 rounded-sm bg-white" data-i18n="process_note">
+                    *Note: Delivery available Tuesday to Sunday. No delivery on Mondays.
+                 </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="logistics" class="py-24 bg-white relative overflow-hidden">
+        <div class="absolute inset-0 z-0">
+             <img src="https://images.unsplash.com/photo-1569388330292-7a6a841cd777?q=80&w=2670&auto=format&fit=crop" 
+                  alt="Deep Water Background" 
+                  class="w-full h-full object-cover" loading="lazy">
+             <div class="absolute inset-0 bg-white/95"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-sm uppercase tracking-widest text-gray-500" data-i18n="logistics_subtitle">Built for Freshness</span>
+                <h2 class="font-serif text-4xl text-oyster-dark mt-2" data-i18n="logistics_title">Supply & Logistics</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="flex flex-col items-center text-center p-8 bg-sand-light/50 rounded-sm border border-sand-accent/20">
+                    <div class="w-16 h-16 mb-6 flex items-center justify-center rounded-full bg-oyster-dark text-white">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                    </div>
+                    <h3 class="font-serif text-2xl text-oyster-dark mb-4" data-i18n="supply_title">Long-Term Partnership</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6" data-i18n="supply_desc">
+                        We prioritize restaurants and distributors seeking consistent, year-round quality. Secure your volume with a standing order to guarantee availability during peak seasons. Ask about our risk-free starter plan.
+                    </p>
+                    <a href="https://wa.me/60165250543" class="text-sm font-bold text-oyster-dark uppercase tracking-widest border-b border-oyster-dark pb-1 hover:text-mangrove-green hover:border-mangrove-green transition-colors" data-i18n="btn_partner">
+                        Become a Partner
+                    </a>
+                </div>
+
+                <div class="flex flex-col items-center text-center p-8 bg-sand-light/50 rounded-sm border border-sand-accent/20">
+                    <div class="w-16 h-16 mb-6 flex items-center justify-center rounded-full bg-oyster-dark text-white">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                    </div>
+                    <h3 class="font-serif text-2xl text-oyster-dark mb-4" data-i18n="deliv_title">Direct Express Delivery</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6" data-i18n="deliv_desc">
+                        To ensure maximum liveliness, we use direct <strong>Express Next Day</strong> delivery networks straight from harvest (Subject to location).
+                    </p>
+                    <div class="text-xs text-gray-500 uppercase tracking-widest font-bold">
+                        <span class="inline-block w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                        <span data-i18n="deliv_status">Live Harvest to Door</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-sand-light border-t border-sand-accent/30">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+             <h2 class="font-serif text-4xl text-oyster-dark mb-16" data-i18n="testi_title">Trusted by Chefs & Connoisseurs</h2>
+             
+             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                 <div class="bg-white p-8 shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div class="text-sand-accent mb-4">★★★★★</div>
+                    <p class="text-gray-600 italic mb-6 leading-relaxed" data-i18n="testi_1_text">
+                        "I've tried the sample, and I'm highly satisfied with the texture, meat quality, flavour and overall taste."
+                    </p>
+                    <p class="text-oyster-dark font-bold text-sm" data-i18n="testi_1_author">Maxx</p>
+                    <p class="text-xs text-gray-400 uppercase tracking-widest mt-1" data-i18n="testi_1_role">Private Customer</p>
+                 </div>
+
+                 <div class="bg-white p-8 shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div class="text-sand-accent mb-4">★★★★★</div>
+                    <p class="text-gray-600 italic mb-6 leading-relaxed" data-i18n="testi_2_text">
+                        "We are very satisfied with your oyster."
+                    </p>
+                    <p class="text-oyster-dark font-bold text-sm" data-i18n="testi_2_author">Mr Tan</p>
+                    <p class="text-xs text-gray-400 uppercase tracking-widest mt-1" data-i18n="testi_2_role">Chef</p>
+                 </div>
+
+                 <div class="bg-white p-8 shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div class="text-sand-accent mb-4">★★★★★</div>
+                    <p class="text-gray-600 italic mb-6 leading-relaxed" data-i18n="testi_3_text">
+                        "The oyster is fresh and will repeat order again for sure!"
+                    </p>
+                    <p class="text-oyster-dark font-bold text-sm" data-i18n="testi_3_author">Amanda Koo</p>
+                    <p class="text-xs text-gray-400 uppercase tracking-widest mt-1" data-i18n="testi_3_role">Private Customer</p>
+                 </div>
+             </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-sm uppercase tracking-widest text-gray-500" data-i18n="faq_subtitle">Common Questions</span>
+                <h2 class="font-serif text-4xl text-oyster-dark mt-2" data-i18n="faq_title">Everything You Need to Know</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="border-l-2 border-sand-accent pl-6">
+                    <h3 class="font-serif text-xl text-oyster-dark mb-3" data-i18n="faq_q1">How do I store the oysters?</h3>
+                    <p class="text-gray-600 leading-relaxed" data-i18n="faq_a1">
+                        Keep them in the fridge (5-8°C), cup side down, covered with a damp cloth to keep them moist. <strong>Do not</strong> store in water or an airtight container, as they need to breathe.
+                    </p>
+                </div>
+
+                <div class="border-l-2 border-sand-accent pl-6">
+                    <h3 class="font-serif text-xl text-oyster-dark mb-3" data-i18n="faq_q2">How long do they last?</h3>
+                    <p class="text-gray-600 leading-relaxed" data-i18n="faq_a2">
+                        For the best experience, we recommend consuming them within <strong>3-5 days</strong> of delivery. They are live animals and stay fresh as long as they are kept cool and damp.
+                    </p>
+                </div>
+
+                <div class="border-l-2 border-sand-accent pl-6">
+                    <h3 class="font-serif text-xl text-oyster-dark mb-3" data-i18n="faq_q3">Are they safe to eat raw?</h3>
+                    <p class="text-gray-600 leading-relaxed" data-i18n="faq_a3">
+                        Yes. Our oysters are depurated (purified) using UV technology and regularly lab-tested for bacteria to meet strict food safety standards for raw consumption.
+                    </p>
+                </div>
+
+                <div class="border-l-2 border-sand-accent pl-6">
+                    <h3 class="font-serif text-xl text-oyster-dark mb-3" data-i18n="faq_q4">Where do you deliver?</h3>
+                    <p class="text-gray-600 leading-relaxed" data-i18n="faq_a4">
+                        We cover most major cities in West Malaysia via express next day delivery. Please WhatsApp us with your postcode to confirm coverage before ordering.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-oyster-dark text-white pt-20 pb-10 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+                
+                <div>
+                    <h3 class="font-serif text-2xl mb-6" data-i18n="foot_contact">Contact Us</h3>
+                    <p class="text-gray-400 mb-2">Bagan Pasir, Perak, Malaysia</p>
+                    <p class="text-gray-400 mb-2">+60 16 525 0543</p>
+                    <p class="text-gray-400 mb-6">mengyongseafood@gmail.com</p>
+                    
+                    <a href="https://wa.me/60165250543" class="inline-flex items-center px-6 py-3 border border-sand-accent text-sand-accent hover:bg-sand-accent hover:text-oyster-dark transition-colors uppercase tracking-widest text-xs font-bold" data-i18n="btn_whatsapp">
+                        WhatsApp Us
+                    </a>
+                </div>
+
+                <div>
+                    <h3 class="font-serif text-2xl mb-6" data-i18n="foot_explore">Explore</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors" data-i18n="nav_about">About</a></li>
+                        <li><a href="#philosophy" class="text-gray-400 hover:text-white transition-colors" data-i18n="nav_farm">Our Philosophy</a></li>
+                        <li><a href="#collection" class="text-gray-400 hover:text-white transition-colors" data-i18n="nav_collection">Oyster Collection</a></li>
+                        <li><a href="#safety" class="text-gray-400 hover:text-white transition-colors" data-i18n="nav_safety">Lab Reports</a></li>
+                        <li><a href="https://wa.me/60165250543" class="text-gray-400 hover:text-white transition-colors" data-i18n="link_wholesale_inq">Wholesale Inquiry</a></li>
+                        <li><button onclick="toggleTerms()" class="text-gray-400 hover:text-white transition-colors text-left">Terms & Policies</button></li>
+                    </ul>
+                </div>
+
+                <div class="h-48 bg-gray-800 relative rounded-sm overflow-hidden group">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127197.87679808383!2d100.67!3d3.88!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sBagan%20Pasir%2C%20Perak!5e0!3m2!1sen!2smy!4v1620000000000!5m2!1sen!2smy" 
+                        width="100%" height="100%" style="border:0; filter: grayscale(100%) contrast(1.2) brightness(0.8);" allowfullscreen="" loading="lazy">
+                    </iframe>
+                    <div class="absolute inset-0 pointer-events-none group-hover:bg-transparent transition-colors duration-300"></div>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 uppercase tracking-widest">
+                <p>© <span id="current-year">2025</span> Meng Yong Seafood Sdn. Bhd. (202101034352)</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="https://www.facebook.com/profile.php?id=61580385074881" target="_blank" class="hover:text-white">Facebook</a>
+                    <a href="https://www.instagram.com/mengyongseafood/" target="_blank" class="hover:text-white">Instagram</a>
+                    <a href="#" class="hover:text-white">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // =========================
+        // 1. CONFIGURATION
+        // =========================
+        const promotions = {
+            active: false, 
+            freeDelivery: true, 
+            freeKnife: true,
+            textEn: "🎄 CHRISTMAS & NEW YEAR SPECIAL! Free Delivery + Free Professional Oyster Knife (Worth RM10) with purchase of RM200 or Christmas Bundle! Limited time only.",
+            textBm: "🎄 ISTIMEWA KRISMAS & TAHUN BARU! Penghantaran Percuma + Pisau Tiram Profesional Percuma (Bernilai RM10) dengan pembelian RM200 atau Pek Krismas!",
+            textCn: "🎄 圣诞与跨年特惠！消费满 RM200 或购买圣诞套餐，即享免运费 + 送价值 RM10 的专业开蚝刀！限时优惠。"
+        };
+        
+        // --- HOLIDAY SETTINGS ---
+        const holidays = [
+            "2025-12-25", // Christmas
+            "2025-12-26", // Boxing Day
+            // Add more holidays here as YYYY-MM-DD
+        ];
+
+        // --- CART LOGIC ---
+        
+        // Product Data (Prices in RM)
+        const products = {
+            prod_xmas: { name: "Christmas Bundle (24pcs)", price: 252.00, qty: 0, type: "bundle", pieces: 24 },
+            prod1: { name: "The Aperitif (Cocktail)", price: 8.00, qty: 0, type: "oyster", pieces: 1 },
+            prod2: { name: "The Signature (Medium)", price: 10.00, qty: 0, type: "oyster", pieces: 1 },
+            prod3: { name: "The Grand (Large)", price: 12.00, qty: 0, type: "oyster", pieces: 1 }
+        };
+
+        // =========================
+        // 2. STATE VARIABLES
+        // =========================
+        const minOrderQty = 12;
+        const addonPrice = 10.00; // Updated price for Knife
+        let deliveryFee = 0;
+        let isPromoQualified = false;
+
+        // =========================
+        // 3. UI HELPERS (Modals & Toggles)
+        // =========================
+        function toggleCart() {
+            const modal = document.getElementById('cart-modal');
+            const panel = document.getElementById('cart-panel');
+            if (modal.classList.contains('hidden')) {
+                modal.classList.remove('hidden');
+                setTimeout(() => panel.classList.remove('translate-x-full'), 10);
+            } else {
+                panel.classList.add('translate-x-full');
+                setTimeout(() => modal.classList.add('hidden'), 300);
+            }
+        }
+
+        function toggleTerms() {
+            const modal = document.getElementById('terms-modal');
+            if(modal) { // Check if modal exists first
+                if (modal.classList.contains('hidden')) {
+                    modal.classList.remove('hidden');
+                } else {
+                    modal.classList.add('hidden');
+                }
+            }
+        }
+
+        // =========================
+        // 4. CORE LOGIC (Cart, Fees, Validation)
+        // =========================
+        function updateCart(prodId, change) {
+            if (products[prodId].qty + change >= 0) {
+                products[prodId].qty += change;
+                updateCartUI();
+            }
+        }
+
+        function manualUpdateCart(prodId, value) {
+            const newQty = parseInt(value);
+            if (!isNaN(newQty) && newQty >= 0) {
+                products[prodId].qty = newQty;
+            } else {
+                products[prodId].qty = 0;
+            }
+            updateCartUI();
+        }
+        
+        function validateDeliveryDate(input) {
+            if (!input.value) return false;
+
+            const date = new Date(input.value);
+            const dayOfWeek = date.getUTCDay(); // 0=Sun, 1=Mon...
+            
+            // Check specific date values directly from string to avoid timezone issues
+            const dateStr = input.value;
+            
+            // 1. Monday Check
+            if (dayOfWeek === 1) { 
+                alert("Sorry, we do not deliver on Mondays. Please select a date between Tuesday and Sunday.");
+                input.value = ''; // Reset input
+                return false;
+            }
+
+            // 2. Holiday Check
+            if (holidays.includes(dateStr)) {
+                alert("Sorry, courier services are closed on this date due to public holidays. Please select another date.");
+                input.value = ''; // Reset input
+                return false;
+            }
+
+            return true;
+        }
+        
+        function updateHolidayWarning() {
+            const warningEl = document.getElementById('holiday-warning');
+            if (!warningEl) return;
+            
+            // Find next upcoming holiday
+            const today = new Date().toISOString().split('T')[0];
+            // Filter ALL upcoming holidays, not just the first one
+            const upcomingList = holidays.filter(h => h >= today).sort();
+            
+            if (upcomingList.length > 0) {
+                // Format dates to DD/MM
+                const formattedDates = upcomingList.map(dateStr => {
+                    const parts = dateStr.split('-');
+                    return `${parts[2]}/${parts[1]}`;
+                });
+                
+                // Join them with " & " to show "25/12 & 26/12"
+                warningEl.textContent = `* Courier Closed: ${formattedDates.join(' & ')}`;
+                warningEl.classList.remove('hidden');
+            } else {
+                warningEl.classList.add('hidden');
+            }
+        }
+        
+        function adjustLayoutForPromo() {
+             const body = document.body;
+             const navbar = document.getElementById('navbar');
+             const html = document.documentElement;
+             
+             if (promotions.active) {
+                 // Promo ON: Add spacing for banner
+                 body.classList.add('pt-8');
+                 navbar.classList.remove('top-0');
+                 navbar.classList.add('top-8');
+                 // Increase scroll padding to account for banner + nav
+                 html.classList.remove('scroll-pt-24');
+                 html.classList.add('scroll-pt-32');
+             } else {
+                 // Promo OFF: Remove spacing
+                 body.classList.remove('pt-8');
+                 navbar.classList.remove('top-8');
+                 navbar.classList.add('top-0');
+                 // Reset scroll padding for just nav
+                 html.classList.remove('scroll-pt-32');
+                 html.classList.add('scroll-pt-24');
+             }
+        }
+
+        // Update UI elements based on cart state
+        function updateCartUI() {
+             // Check date validity first
+            const dateInput = document.getElementById('delivery-date');
+            if (dateInput.value) {
+                if (!validateDeliveryDate(dateInput)) {
+                     // If invalid, stop calculation (totals will update on next valid input or reset)
+                     // Logic continues but date is cleared by validate function
+                }
+            }
+
+            let totalQty = 0;
+            let oysterQty = 0; // Track pieces for min order
+            let subtotal = 0.00;
+            const cartItemsContainer = document.getElementById('cart-items-container');
+            cartItemsContainer.innerHTML = '';
+
+            // Update quantity displays
+            for (const [id, prod] of Object.entries(products)) {
+                // Update input value
+                const qtyInput = document.getElementById(`qty-${id}`);
+                if (qtyInput) qtyInput.value = prod.qty;
+                
+                totalQty += prod.qty;
+                
+                // Calculate actual oyster pieces (Bundle counts as multiple)
+                if (prod.type === "oyster") {
+                    oysterQty += prod.qty;
+                } else if (prod.type === "bundle") {
+                    oysterQty += (prod.qty * prod.pieces);
+                }
+                
+                subtotal += (prod.qty * prod.price);
+
+                // Add to modal list
+                if (prod.qty > 0) {
+                    const itemRow = document.createElement('div');
+                    itemRow.className = "flex justify-between items-center text-sm border-b border-gray-100 pb-2";
+                    itemRow.innerHTML = `
+                        <div>
+                            <span class="font-bold text-oyster-dark">${prod.name}</span>
+                            <div class="text-xs text-gray-500">RM ${prod.price.toFixed(2)} x ${prod.qty}</div>
+                        </div>
+                        <div class="font-bold">RM ${(prod.price * prod.qty).toFixed(2)}</div>
+                    `;
+                    cartItemsContainer.appendChild(itemRow);
+                }
+            }
+
+            // Calculate Delivery Fee (Pass subtotal to check promo)
+            deliveryFee = calculateDeliveryFee(subtotal);
+            
+            // Check Addons
+            const freeGiftAlert = document.getElementById('free-gift-alert');
+            const freeGiftRow = document.getElementById('cart-free-gift-row');
+            const paidKnifeOption = document.getElementById('paid-knife-option');
+            
+            let hasAddon = false;
+            
+            // Fix for null error - check if elements exist
+            if(freeGiftAlert && freeGiftRow && paidKnifeOption) {
+                if (promotions.active && isPromoQualified) {
+                    // Free Knife Logic
+                    freeGiftAlert.classList.remove('hidden');
+                    freeGiftRow.classList.remove('hidden');
+                    paidKnifeOption.classList.add('hidden'); 
+                    const addonCheckbox = document.getElementById('addon-knife');
+                    if(addonCheckbox) addonCheckbox.checked = false;
+                } else {
+                    // Normal Logic
+                    freeGiftAlert.classList.add('hidden');
+                    freeGiftRow.classList.add('hidden');
+                    paidKnifeOption.classList.remove('hidden');
+                    
+                    const addonCheckbox = document.getElementById('addon-knife');
+                    if(addonCheckbox) hasAddon = addonCheckbox.checked;
+                }
+            }
+
+            const addonCost = hasAddon ? addonPrice : 0;
+            const addonRow = document.getElementById('cart-addon-row');
+            
+            if(addonRow) {
+                if (hasAddon) {
+                    addonRow.classList.remove('hidden');
+                } else {
+                    addonRow.classList.add('hidden');
+                }
+            }
+
+            // Final Total
+            const finalTotal = subtotal + deliveryFee + addonCost;
+
+            // Delivery UI Update (Free Tag & Strikethrough)
+            const deliveryFeeDisplay = document.getElementById('delivery-fee-display');
+            const freeDeliveryBadge = document.getElementById('free-delivery-badge');
+            
+            if (deliveryFeeDisplay) {
+                if (promotions.active && isPromoQualified) {
+                    if(freeDeliveryBadge) freeDeliveryBadge.classList.remove('hidden');
+                    deliveryFeeDisplay.innerHTML = `
+                        <span class="block text-xs text-gray-400 line-through font-normal">RM 20.00</span>
+                        <span>RM 0.00</span>
+                    `;
+                } else {
+                    if(freeDeliveryBadge) freeDeliveryBadge.classList.add('hidden');
+                    deliveryFeeDisplay.innerHTML = `RM <span id="cart-delivery-fee">${deliveryFee.toFixed(2)}</span>`;
+                }
+            }
+
+            // Update Badges
+            const badge = document.getElementById('cart-count-badge');
+            const navBadge = document.getElementById('nav-cart-badge');
+            
+            if (totalQty > 0) {
+                if(badge) {
+                    badge.textContent = totalQty;
+                    badge.classList.remove('hidden');
+                }
+                if(navBadge) {
+                    navBadge.textContent = totalQty;
+                    navBadge.classList.remove('hidden');
+                }
+            } else {
+                if(badge) badge.classList.add('hidden');
+                if(navBadge) navBadge.classList.add('hidden');
+                if(cartItemsContainer) cartItemsContainer.innerHTML = '<div class="text-center text-gray-500 py-8 italic" data-i18n="cart_empty">Your cart is empty.</div>';
+            }
+
+            // Update Totals Display
+            const subtotalEl = document.getElementById('cart-subtotal');
+            if(subtotalEl) subtotalEl.textContent = subtotal.toFixed(2);
+            // Delivery fee logic handled above in direct innerHTML assignment for strikethrough
+            const totalEl = document.getElementById('cart-total-price');
+            if(totalEl) totalEl.textContent = finalTotal.toFixed(2);
+
+            // Validation Logic (Min 12 oysters OR Bundle)
+            const checkoutBtn = document.getElementById('checkout-btn');
+            const warningMsg = document.getElementById('min-order-warning');
+
+            if(checkoutBtn && warningMsg) {
+                if (oysterQty >= minOrderQty) {
+                    checkoutBtn.disabled = false;
+                    checkoutBtn.classList.remove('bg-gray-400');
+                    checkoutBtn.classList.add('bg-[#25D366]', 'hover:bg-[#128C7E]');
+                    warningMsg.classList.add('hidden');
+                } else {
+                    checkoutBtn.disabled = true;
+                    checkoutBtn.classList.add('bg-gray-400');
+                    checkoutBtn.classList.remove('bg-[#25D366]', 'hover:bg-[#128C7E]');
+                    
+                    if (totalQty > 0) {
+                        warningMsg.classList.remove('hidden');
+                        const warningText = warningMsg.querySelector('span');
+                        if(warningText) warningText.textContent = `Minimum order is 12 oysters (Current: ${oysterQty}).`;
+                    } else {
+                        warningMsg.classList.add('hidden');
+                    }
+                }
+            }
+        }
+
+        // Calculate Delivery Fee
+        function calculateDeliveryFee(subtotal) {
+            // Promo Logic: Spend >= 200 OR Buy Christmas Bundle
+            isPromoQualified = (subtotal >= 200 || products['prod_xmas'].qty > 0);
+
+            if (promotions.active && isPromoQualified) {
+                return 0; 
+            }
+
+            const dateInput = document.getElementById('delivery-date').value;
+            if (!dateInput) return 0;
+            
+            // Flat rate
+            return 20.00;
+        }
+
+        // =========================
+        // 5. CHECKOUT (WhatsApp)
+        // =========================
+        function processCheckout() {
+            const dateInput = document.getElementById('delivery-date');
+            const remarksInput = document.getElementById('order-remarks');
+            const addonInput = document.getElementById('addon-knife');
+
+            if (!dateInput || !dateInput.value) {
+                alert("Please select a delivery date to calculate the correct fee.");
+                return;
+            }
+
+            let message = "Hi Meng Yong Seafood, I would like to place an order:%0a%0a";
+            let subtotal = 0;
+
+            for (const [id, prod] of Object.entries(products)) {
+                if (prod.qty > 0) {
+                    message += `• ${prod.name}: ${prod.qty} pcs (RM ${(prod.qty * prod.price).toFixed(2)})%0a`;
+                    subtotal += (prod.qty * prod.price);
+                }
+            }
+            
+            // Recalculate Promo Status
+            isPromoQualified = (subtotal >= 200 || products['prod_xmas'].qty > 0);
+
+            let isFreeKnife = (promotions.active && isPromoQualified);
+            let hasAddon = false;
+            if (addonInput) hasAddon = addonInput.checked;
+
+            if (isFreeKnife) {
+                 message += `• 🎁 FREE GIFT: Professional Shucker (Knife) (Worth RM 10.00 - FREE)%0a`;
+            } else if (hasAddon) {
+                message += `• Professional Shucker (Knife): 1 (RM ${addonPrice.toFixed(2)})%0a`;
+                subtotal += addonPrice;
+            }
+
+            const fee = calculateDeliveryFee(subtotal);
+            const total = subtotal + fee;
+
+            message += `%0aSubtotal: RM ${subtotal.toFixed(2)}`;
+            
+            if (promotions.active && isPromoQualified) {
+                message += `%0aDelivery Fee: RM 0.00 (Worth RM 20.00 - FREE)`;
+            } else {
+                message += `%0aDelivery Fee: RM ${fee.toFixed(2)}`;
+            }
+            
+            message += `%0a*Total: RM ${total.toFixed(2)}*`;
+            message += `%0aDelivery Date: ${dateInput.value}`;
+            
+            if (remarksInput && remarksInput.value) {
+                message += `%0aRemarks: ${remarksInput.value}`;
+            }
+
+            message += `%0a%0aI have made the payment to Hong Leong Bank (Meng Yong Seafood). Please find the receipt attached.`;
+
+            window.open(`https://wa.me/60165250543?text=${message}`, '_blank');
+        }
+
+        // =========================
+        // 6. LOCALIZATION
+        // =========================
+        const translations = {
+            en: {
+                nav_about: "About", nav_farm: "Our Farm", nav_collection: "The Collection", nav_safety: "Safety", nav_order: "Order Now", nav_order_wa: "Order via WhatsApp", nav_cart: "Cart", nav_view_cart: "View Cart", btn_view_cart: "View Cart",
+                cart_title: "Your Order", cart_empty: "Your cart is empty.", cart_min_warning: "Minimum order is 12 pieces total.", cart_extras_title: "Extras", addon_knife_title: "Add Professional Shucker", addon_knife_desc: "Essential tool for opening oysters safely",
+                cart_remarks_label: "Special Instructions", cart_date_label: "Preferred Delivery Date", cart_total: "Total", cart_send_wa: "Send Order via WhatsApp", pay_title: "Manual Payment Instructions", pay_bank: "Bank: <strong>Hong Leong Bank</strong><br>Acc: <strong>15200043477</strong><br>Name: <strong>Meng Yong Seafood Sdn Bhd</strong>",
+                pay_note: "*Please attach receipt in WhatsApp after clicking 'Send Order'.", hero_eyebrow: "Premium BP Oysters", hero_title_1: "From Mangrove", hero_title_2: "To", hero_title_3: "Masterpiece", hero_subtitle: "Premium, single-seed oysters cultivated in the nutrient-rich sanctuary of Bagan Pasir, Perak.",
+                btn_collection: "View Collection", badge_safety: "Lab-Certified Safety", about_subtitle: "Our Story", about_title: "About Meng Yong Seafood", identity_title: "Who We Are", identity_desc: "Meng Yong Seafood is a premier aquaculture enterprise based in the nutrient-rich wetlands of Bagan Pasir, Perak. We specialize in the sustainable cultivation of premium mangrove oysters, bridging the gap between traditional farming wisdom and modern food safety science.",
+                identity_mission: "Our mission is simple: To put Malaysian oysters on the world map by delivering a product that is not only delicious but rigorously lab-tested and safe for raw consumption.", heritage_title: "Our Heritage", heritage_desc: "Bagan Pasir, Perak is our home and our history. For over 30 years, this estuarine community has been the heart of the state's cockle farming industry. We are the next generation of that legacy.",
+                heritage_connect: "By adapting deep local knowledge of tides and currents to modern oyster farming, we have turned these historic waters into a sanctuary for the \"Premium BP Oyster\"—a masterpiece of flavor and texture.", phil_title: "The Estuarine Jewel", phil_quote: "\"Deep in the mangroves of Bagan Pasir, the water tells a story.\"",
+                feat1_title: "Single-Seed Origins", feat1_desc: "Raised from hatchery-raised single-seed spat. This modern technique ensures a perfect, deep-cup shape and consistent meat quality.", feat4_title: "Raft & Cage Control", feat4_desc: "Farmed on floating rafts and kept in specialized cages. This method allows for better quality control and protection during growth.",
+                feat2_title: "Mangrove Nurtured", feat2_desc: "Grown in the biodiverse Bagan Pasir estuary. The mixing of fresh river water and saltwater creates a unique, creamy sweetness.", feat3_title: "Science-Backed Safety", feat3_desc: "We combine tradition with innovation. Post-harvest UV depuration and rigorous periodic lab testing ensure every shell is pristine.",
+                safety_subtitle: "Lab-Certified Purity", safety_title: "Zero Tolerance for Compromise.", safety_desc: "Our microbiological test results meet strict safety limits for ready-to-eat shellfish. We don't just guess; we verify.", val_absent: "Absent", val_uv: "Depuration System", col_subtitle: "Curated Harvest", col_title: "The Collection",
+                prod1_name: "The Aperitif", prod1_size: "Cocktail Size (~2\")", prod1_desc: "Delicate and briny. The perfect raw tasting start. Ideal for parties and first-time tasters.", btn_inquire: "Inquire Price", badge_bestseller: "Best Seller", prod2_name: "The Signature", prod2_size: "Medium Size (~3\")", prod2_desc: "Our most balanced profile. Smooth, crispy meat with a sweet finish. The chef's choice.",
+                prod3_name: "The Grand", prod3_size: "Large Size (~4\")", prod3_desc: "Bold and full-bodied. Substantial meat ideal for grilling, Rockefeller style, or rich preparations.", prod4_name: "Professional Shucker", prod4_size: "Accessory", prod4_desc: "Essential tool for opening oysters safely. High-quality stainless steel with an ergonomic grip.",
+                prod_xmas_name: "Christmas Bundle", prod_xmas_size: "24 Pieces Total", prod_xmas_desc: "6 Large (The Grand) + 18 Medium (The Signature). The ultimate festive sharing platter.", process_subtitle: "Freshness Guaranteed", process_title: "How to Order", step1_title: "Order & Pay", step1_desc: "Select your oysters and complete payment to secure your harvest slot.",
+                step2_title: "Morning Harvest", step2_desc: "We harvest fresh in the morning <strong>only after</strong> payment is confirmed.", step3_title: "Express Dispatch", step3_desc: "Packed live and dispatched immediately. <br/><span class=\"font-bold text-oyster-dark\">Tue - Sun</span>", step4_title: "Arrive & Enjoy", step4_desc: "Receive live oysters at your doorstep the Next Day (Subject to location).",
+                process_note: "*Note: Delivery available Tuesday to Sunday. No delivery on Mondays.", logistics_subtitle: "Built for Freshness", logistics_title: "Supply & Logistics", supply_title: "Long-Term Partnership", supply_desc: "We prioritize restaurants and distributors seeking consistent, year-round quality. Secure your volume with a standing order to guarantee availability during peak seasons. Ask about our risk-free starter plan.",
+                btn_partner: "Become a Partner", deliv_title: "Direct Express Delivery", deliv_desc: "To ensure maximum liveliness, we use direct <strong>Express Next Day</strong> delivery networks straight from harvest (Subject to location).", deliv_status: "Live Harvest to Door", testi_title: "Trusted by Chefs & Connoisseurs", testi_1_text: "\"I've tried the sample, and I'm highly satisfied with the texture, meat quality, flavour and overall taste.\"",
+                testi_1_author: "Maxx", testi_1_role: "Private Customer", testi_2_text: "\"We are very satisfied with your oyster.\"", testi_2_author: "Mr Tan", testi_2_role: "Chef", testi_3_text: "\"The oyster is fresh and will repeat order again for sure!\"", testi_3_author: "Amanda Koo", testi_3_role: "Private Customer", faq_subtitle: "Common Questions", faq_title: "Everything You Need to Know",
+                faq_q1: "How do I store the oysters?", faq_a1: "Keep them in the fridge (5-8°C), cup side down, covered with a damp cloth to keep them moist. <strong>Do not</strong> store in water or an airtight container, as they need to breathe.", faq_q2: "How long do they last?", faq_a2: "For the best experience, we recommend consuming them within <strong>3-5 days</strong> of delivery. They are live animals and stay fresh as long as they are kept cool and damp.",
+                faq_q3: "Are they safe to eat raw?", faq_a3: "Yes. Our oysters are depurated (purified) using UV technology and regularly lab-tested for bacteria to meet strict food safety standards for raw consumption.", faq_q4: "Where do you deliver?", faq_a4: "We cover most major cities in West Malaysia via express next day delivery. Please WhatsApp us with your postcode to confirm coverage before ordering.",
+                badge_msia: "Proudly Malaysian", foot_contact: "Contact Us", btn_whatsapp: "WhatsApp Us", foot_explore: "Explore", link_wholesale_inq: "Wholesale Inquiry", cart_delivery_note: "Delivery Fee: RM20", cart_no_monday: "* No delivery on Mondays", cart_holiday_closure: "* Courier Closed: Dec 25 & 26"
+            },
+            bm: {
+                nav_about: "Tentang Kami",
+                nav_farm: "Ladang Kami",
+                nav_collection: "Koleksi",
+                nav_safety: "Keselamatan",
+                nav_order: "Tempah Sekarang",
+                nav_order_wa: "Tempah melalui WhatsApp",
+                nav_cart: "Troli",
+                nav_view_cart: "Lihat Troli",
+                btn_view_cart: "Lihat Troli",
+                cart_title: "Pesanan Anda",
+                cart_empty: "Troli anda kosong.",
+                cart_min_warning: "Pesanan minimum adalah 12 keping.",
+                cart_extras_title: "Tambahan",
+                addon_knife_title: "Tambah Pisau Tiram Profesional",
+                addon_knife_desc: "Alat penting untuk membuka tiram dengan selamat",
+                cart_remarks_label: "Arahan Khas",
+                cart_date_label: "Tarikh Penghantaran Pilihan",
+                cart_total: "Jumlah",
+                cart_send_wa: "Hantar Pesanan melalui WhatsApp",
+                pay_title: "Arahan Pembayaran Manual",
+                pay_bank: "Bank: <strong>Hong Leong Bank</strong><br>Akaun: <strong>15200043477</strong><br>Nama: <strong>Meng Yong Seafood Sdn Bhd</strong>",
+                pay_note: "*Sila lampirkan resit di WhatsApp selepas klik 'Hantar Pesanan'.",
+                hero_eyebrow: "Premium BP Oysters",
+                hero_title_1: "From Mangrove",
+                hero_title_2: "To",
+                hero_title_3: "Masterpiece",
+                hero_subtitle: "Tiram 'single-seed' premium yang diternak di perairan kaya nutrien Bagan Pasir, Perak.",
+                btn_collection: "Lihat Koleksi",
+                badge_safety: "Keselamatan Disahkan Makmal",
+                // About
+                about_subtitle: "Cerita Kami",
+                about_title: "Tentang Meng Yong Seafood",
+                identity_title: "Siapa Kami",
+                identity_desc: "Meng Yong Seafood adalah perusahaan akuakultur premier yang berpangkalan di tanah lembap kaya nutrien Bagan Pasir, Perak. Kami pakar dalam penanaman tiram bakau premium yang mampan, menghubungkan kebijaksanaan pertanian tradisional dengan sains keselamatan makanan moden.",
+                identity_mission: "Misi kami mudah: Untuk meletakkan tiram Malaysia di peta dunia dengan menyampaikan produk yang bukan sahaja lazat tetapi diuji makmal dengan ketat dan selamat untuk dimakan mentah.",
+                heritage_title: "Warisan Kami",
+                heritage_desc: "Bagan Pasir, Perak adalah rumah dan sejarah kami. Selama lebih 30 tahun, komuniti estuari ini telah menjadi nadi industri penternakan kerang negeri. Kami adalah generasi seterusnya warisan itu.",
+                heritage_connect: "Dengan mengadaptasi pengetahuan tempatan yang mendalam tentang pasang surut dan arus kepada penternakan tiram moden, kami telah mengubah perairan bersejarah ini menjadi santuari untuk \"Tiram Premium BP\"—satu mahakarya rasa dan tekstur.",
+                // Philosophy
+                phil_title: "Permata Estuari",
+                phil_quote: "\"Jauh di dalam paya bakau Bagan Pasir, airnya menyimpan seribu kisah.\"",
+                feat1_title: "Asal Usul 'Single-Seed'",
+                feat1_desc: "Diternak daripada benih 'hatchery' tunggal. Teknik moden ini memastikan bentuk cawan dalam yang sempurna dan kualiti isi yang konsisten.",
+                feat4_title: "Kawalan Rakit & Sangkar",
+                feat4_desc: "Diternak di atas rakit terapung dan disimpan dalam sangkar khusus. Kaedah ini membolehkan kawalan kualiti dan perlindungan yang lebih baik.",
+                feat2_title: "Khazanah Bakau",
+                feat2_desc: "Membesar di estuari Bagan Pasir yang kaya biodiversiti. Pertemuan air sungai segar dan air masin mencipta kemanisan berkrim yang unik.",
+                feat3_title: "Keselamatan Saintifik",
+                feat3_desc: "Kami menggabungkan tradisi dengan inovasi. Depurasi UV pasca-tuai dan ujian makmal berkala yang ketat memastikan setiap tiram bersih.",
+                // Safety
+                safety_subtitle: "Ketulenan Disahkan Makmal",
+                safety_title: "Tiada Kompromi Terhadap Kualiti.",
+                safety_desc: "Keputusan ujian mikrobiologi kami memenuhi had keselamatan ketat untuk kerang-kerangan sedia dimakan. Kami buktikan dengan fakta.",
+                val_absent: "Tiada",
+                val_uv: "Sistem Depurasi",
+                // Collection
+                col_subtitle: "Hasil Terpilih",
+                col_title: "Koleksi Tiram",
+                link_wholesale: "Muat Turun Senarai Borong",
+                prod1_name: "The Aperitif",
+                prod1_size: "Saiz Koktel (~2\")",
+                prod1_desc: "Halus dan masin. Permulaan rasa mentah yang sempurna. Ideal untuk majlis dan percubaan kali pertama.",
+                btn_inquire: "Tanya Harga",
+                badge_bestseller: "Paling Laris",
+                prod2_name: "The Signature",
+                prod2_size: "Saiz Sederhana (~3\")",
+                prod2_desc: "Profil kami yang paling seimbang. Isi yang licin, rangup dengan pengakhiran yang manis. Pilihan cef.",
+                prod3_name: "The Grand",
+                prod3_size: "Saiz Besar (~4\")",
+                prod3_desc: "Berani dan berisi penuh. Isi yang tebal ideal untuk dipanggang, gaya Rockefeller, atau masakan yang kaya rasa.",
+                prod4_name: "Pisau Tiram Profesional",
+                prod4_size: "Aksesori",
+                prod4_desc: "Alat penting untuk membuka tiram dengan selamat. Keluli tahan karat berkualiti tinggi dengan pemegang ergonomik.",
+                prod_xmas_name: "Pek Krismas",
+                prod_xmas_size: "24 Keping Jumlah",
+                prod_xmas_desc: "6 Besar (The Grand) + 18 Sederhana (The Signature). Hidangan perayaan yang sempurna untuk dikongsi.",
+                // Order Process
+                process_subtitle: "Jaminan Kesegaran",
+                process_title: "Cara Memesan",
+                step1_title: "Pesan & Bayar",
+                step1_desc: "Pilih tiram anda dan buat pembayaran untuk mengesahkan slot tuaian anda.",
+                step2_title: "Tuaian Pagi",
+                step2_desc: "Kami menuai segar pada waktu pagi <strong>hanya selepas</strong> pembayaran disahkan.",
+                step3_title: "Penghantaran Ekspres",
+                step3_desc: "Dibungkus hidup dan dihantar segera. <br/><span class=\"font-bold text-oyster-dark\">Sel - Ahad</span>",
+                step4_title: "Terima & Nikmati",
+                step4_desc: "Terima tiram hidup di depan pintu anda pada Hari Berikutnya (Tertakluk lokasi).",
+                process_note: "*Nota: Penghantaran tersedia Selasa hingga Ahad. Tiada penghantaran pada hari Isnin.",
+                // Logistics
+                logistics_subtitle: "Dibina untuk Kesegaran",
+                logistics_title: "Bekalan & Logistik",
+                supply_title: "Rakan Kongsi Jangka Panjang",
+                supply_desc: "Kami mengutamakan restoran dan pengedar yang mencari kualiti konsisten sepanjang tahun. Jamin kuantiti anda dengan pesanan tetap untuk memastikan ketersediaan semasa musim puncak. Tanya tentang pelan permulaan tanpa risiko kami.",
+                btn_partner: "Jadi Rakan Kongsi",
+                deliv_title: "Penghantaran Terus Ekspres",
+                deliv_desc: "Untuk memastikan kesegaran maksimum, kami menggunakan rangkaian <strong>Penghantaran Ekspres Hari Berikutnya</strong> terus dari tuai (Tertakluk kepada lokasi).",
+                deliv_status: "Tuai Hidup ke Pintu",
+                // Testimonials
+                testi_title: "Dipercayai oleh Chef & Konoiser",
+                testi_1_text: "\"Saya telah mencuba sampel, dan saya sangat berpuas hati dengan tekstur, kualiti isi, rasa dan kelazatan keseluruhannya.\"",
+                testi_1_author: "Maxx",
+                testi_1_role: "Pelanggan Peribadi",
+                testi_2_text: "\"Kami sangat berpuas hati dengan tiram anda.\"",
+                testi_2_author: "Encik Tan",
+                testi_2_role: "Chef",
+                testi_3_text: "\"Tiramnya segar dan pasti akan menempah lagi!\"",
+                testi_3_author: "Amanda Koo",
+                testi_3_role: "Pelanggan Peribadi",
+                // FAQ
+                faq_subtitle: "Soalan Lazim",
+                faq_title: "Apa Yang Perlu Anda Tahu",
+                faq_q1: "Bagaimana cara simpan tiram?",
+                faq_a1: "Simpan dalam peti sejuk (5-8°C), bahagian cawan ke bawah, tutup dengan kain lembap. <strong>Jangan</strong> simpan dalam air atau bekas kedap udara, kerana ia perlu bernafas.",
+                faq_q2: "Berapa lama ia boleh tahan?",
+                faq_a2: "Untuk rasa terbaik, kami syorkan makan dalam masa <strong>3-5 hari</strong> selepas penghantaran. Ia adalah haiwan hidup dan kekal segar selagi disimpan sejuk dan lembap.",
+                faq_q3: "Adakah selamat dimakan mentah?",
+                faq_a3: "Ya. Tiram kami melalui proses depurasi (pembersihan) UV dan diuji makmal secara berkala untuk memenuhi piawaian keselamatan makanan yang ketat.",
+                faq_q4: "Di mana kawasan penghantaran?",
+                faq_a4: "Kami meliputi kebanyakan bandar utama di Semenanjung Malaysia melalui penghantaran ekspres hari berikutnya. Sila WhatsApp kami dengan poskod anda untuk pengesahan sebelum memesan.",
+                // Footer
+                badge_msia: "Kebanggaan Malaysia",
+                foot_contact: "Hubungi Kami",
+                btn_whatsapp: "WhatsApp Kami",
+                foot_explore: "Terokai",
+                link_wholesale_inq: "Pertanyaan Borong",
+                cart_delivery_note: "Caj Penghantaran: RM20",
+                cart_no_monday: "* Tiada penghantaran pada hari Isnin",
+                cart_holiday_closure: "* Kurier Tutup: 25 & 26 Dis"
+            },
+            cn: {
+                nav_about: "关于我们",
+                nav_farm: "关于养殖场",
+                nav_collection: "生蚝系列",
+                nav_safety: "食品安全",
+                nav_order: "立即订购",
+                nav_order_wa: "通过 WhatsApp 订购",
+                nav_cart: "购物车",
+                nav_view_cart: "查看购物车",
+                btn_view_cart: "查看购物车",
+                cart_title: "您的订单",
+                cart_empty: "您的购物车是空的。",
+                cart_min_warning: "最低订单量为 12 只。",
+                cart_extras_title: "额外选项",
+                addon_knife_title: "添加专业开蚝刀",
+                addon_knife_desc: "安全开启生蚝的必备工具",
+                cart_remarks_label: "特别说明",
+                cart_date_label: "首选送货日期",
+                cart_total: "总计",
+                cart_send_wa: "通过 WhatsApp 发送订单",
+                pay_title: "手动付款说明",
+                pay_bank: "银行: <strong>Hong Leong Bank</strong><br>账号: <strong>15200043477</strong><br>户名: <strong>Meng Yong Seafood Sdn Bhd</strong>",
+                pay_note: "*请在点击“发送订单”后在 WhatsApp 中附上收据。",
+                hero_eyebrow: "Premium BP Oysters",
+                hero_title_1: "From Mangrove",
+                hero_title_2: "To",
+                hero_title_3: "Masterpiece",
+                hero_subtitle: "产自霹雳州峇眼巴硕营养丰富的红树林保护区，精心培育的优质单体生蚝。",
+                btn_collection: "查看系列",
+                badge_safety: "实验室认证安全",
+                // About
+                about_subtitle: "品牌故事",
+                about_title: "关于 Meng Yong Seafood",
+                identity_title: "我们是谁",
+                identity_desc: "Meng Yong Seafood 是一家位于霹雳州峇眼巴硕营养丰富湿地的优质水产养殖企业。我们专注于可持续培育优质红树林生蚝，致力于将传统养殖智慧与现代食品安全科学相结合。",
+                identity_mission: "我们的使命很简单：通过提供不仅美味而且经过严格实验室测试、可安全生食的产品，让马来西亚生蚝登上世界舞台。",
+                heritage_title: "我们的传承",
+                heritage_desc: "霹雳州峇眼巴硕是我们的家，也是我们的历史。三十多年来，这个河口社区一直是该州鲜蛤养殖业的核心。我们是这份遗产的下一代传承者。",
+                heritage_connect: "通过将对潮汐和水流的深厚本土知识应用于现代生蚝养殖，我们将这片历史悠久的水域变成了“优质 BP 生蚝”的避风港——这是风味与口感的杰作。",
+                // Philosophy
+                phil_title: "河口的瑰宝",
+                phil_quote: "“在峇眼巴硕红树林的深处，每一滴水都在诉说着故事。”",
+                feat1_title: "单体育苗",
+                feat1_desc: "采用孵化场培育的单体蚝苗。这项现代技术确保了完美的深壳形状和始终如一的肉质。",
+                feat4_title: "浮筏吊笼养殖",
+                feat4_desc: "在浮筏上使用特制吊笼养殖。这种方式可以更好地控制养殖质量，并在生长过程中提供更好的保护。",
+                feat2_title: "红树林滋养",
+                feat2_desc: "生长在生物多样性丰富的峇眼巴硕河口。淡水与咸水的交汇创造了独特的奶油般鲜甜口感。",
+                feat3_title: "科学保障安全",
+                feat3_desc: "我们将传统与创新相结合。采收后的紫外线净化和严格的定期实验室检测确保每一颗生蚝都纯净无瑕。",
+                // Safety
+                safety_subtitle: "实验室认证纯度",
+                safety_title: "对品质零妥协",
+                safety_desc: "我们的微生物测试结果符合即食贝类的严格安全标准。我们不靠猜测，只靠验证。",
+                val_absent: "未检出",
+                val_uv: "净化系统",
+                // Collection
+                col_subtitle: "精选收获",
+                col_title: "生蚝系列",
+                link_wholesale: "下载批发单",
+                prod1_name: "The Aperitif",
+                prod1_size: "鸡尾酒尺寸 (~2\")",
+                prod1_desc: "精致且带有海水的咸鲜味。完美的生食入门体验。适合派对和初次尝试者。",
+                btn_inquire: "查询价格",
+                badge_bestseller: "畅销推荐",
+                prod2_name: "The Signature",
+                prod2_size: "中等尺寸 (~3\")",
+                prod2_desc: "口感最平衡的选择。肉质顺滑、爽脆，回味甘甜。主厨的首选。",
+                prod3_name: "The Grand",
+                prod3_size: "大尺寸 (~4\")",
+                prod3_desc: "饱满厚实。肉质丰厚，非常适合烧烤、洛克菲勒式烹饪或浓郁口味的料理。",
+                prod4_name: "专业开蚝刀",
+                prod4_size: "配件",
+                prod4_desc: "安全开启生蚝的必备工具。采用优质不锈钢制成，配有人体工学手柄。",
+                prod_xmas_name: "圣诞特惠套餐",
+                prod_xmas_size: "共 24 只",
+                prod_xmas_desc: "6只大号 (The Grand) + 18只中号 (The Signature)。适合节日分享的终极拼盘。",
+                // Order Process
+                process_subtitle: "新鲜保证",
+                process_title: "如何订购",
+                step1_title: "下单与付款",
+                step1_desc: "选择您的生蚝并完成付款，以锁定您的收获时段。",
+                step2_title: "清晨捕捞",
+                step2_desc: "我们只在确认付款后，于<strong>清晨</strong>进行新鲜捕捞。",
+                step3_title: "极速发货",
+                step3_desc: "鲜活包装并立即发货。<br/><span class=\"font-bold text-oyster-dark\">周二至周日</span>",
+                step4_title: "送达享用",
+                step4_desc: "次日收到鲜活生蚝（视地区而定）。",
+                process_note: "*注意：配送服务仅限周二至周日。周一不配送。",
+                // Logistics
+                logistics_subtitle: "为鲜度而生",
+                logistics_title: "供应与物流",
+                supply_title: "长期合作伙伴",
+                supply_desc: "我们优先考虑寻求全年稳定品质的餐厅和经销商。通过长期订单锁定您的货源，确保旺季期间的供应。欢迎咨询我们的无风险入门计划。",
+                btn_partner: "成为合作伙伴",
+                deliv_title: "直发极速配送",
+                deliv_desc: "为了确保最大的鲜活度，我们采用从捕捞地直接发出的<strong>次日达极速配送</strong>网络（视地区而定）。",
+                deliv_status: "鲜活直达",
+                // Testimonials
+                testi_title: "主厨与鉴赏家的信赖",
+                testi_1_text: "“我已经试过样品了，对口感、肉质、风味和整体味道都非常满意。”",
+                testi_1_author: "Maxx",
+                testi_1_role: "私人客户",
+                testi_2_text: "“我们对你们的生蚝非常满意。”",
+                testi_2_author: "陈先生 (Mr Tan)",
+                testi_2_role: "主厨",
+                testi_3_text: "“生蚝很新鲜，肯定会再次订购！”",
+                testi_3_author: "Amanda Koo",
+                testi_3_role: "私人客户",
+                // FAQ
+                faq_subtitle: "常见问题",
+                faq_title: "您需要了解的一切",
+                faq_q1: "如何保存生蚝？",
+                faq_a1: "请放入冰箱冷藏（5-8°C），壳较深的一面朝下，用湿布覆盖保湿。<strong>切勿</strong>浸泡在水中或放入密封容器，因为它们需要呼吸。",
+                faq_q2: "可以存放多久？",
+                faq_a2: "为了最佳体验，建议在收到后 <strong>3-5 天</strong> 内食用。只要保持低温和湿润，生蚝就能保持鲜活。",
+                faq_q3: "可以生吃吗？",
+                faq_a3: "可以。我们的生蚝经过紫外线净化处理，并定期进行细菌实验室检测，完全符合生食的安全标准。",
+                faq_q4: "配送范围是哪里？",
+                faq_a4: "我们通过次日达极速配送覆盖西马的大部分主要城市。下单前请通过 WhatsApp 发送您的邮编给我们以确认配送范围。",
+                // Footer
+                badge_msia: "马来西亚的骄傲",
+                foot_contact: "联系我们",
+                btn_whatsapp: "联系 WhatsApp",
+                foot_explore: "探索",
+                link_wholesale_inq: "批发咨询",
+                cart_delivery_note: "运费: RM20",
+                cart_no_monday: "* 周一不配送",
+                cart_holiday_closure: "* 快递休息: 12月25日 & 26日"
+            }
+        };
+
+        function setLanguage(lang) {
+            // Update all elements with data-i18n attribute
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                if (translations[lang][key]) {
+                    // Preserve nested HTML tags if any (like <i>)
+                    if (element.children.length > 0) {
+                       element.innerHTML = translations[lang][key];
+                    } else {
+                        element.textContent = translations[lang][key];
+                    }
+                }
+            });
+
+            // Update active state of buttons
+            ['en', 'bm', 'cn'].forEach(l => {
+                const btn = document.getElementById(`lang-btn-${l}`);
+                if (btn) {
+                    if (l === lang) {
+                        btn.classList.add('text-sand-accent', 'font-bold');
+                        btn.classList.remove('text-gray-400');
+                    } else {
+                        btn.classList.remove('text-sand-accent', 'font-bold');
+                    }
+                }
+            });
+
+            // Persist preference
+            localStorage.setItem('preferredLanguage', lang);
+        }
+
+        // =========================
+        // 7. INITIALIZATION
+        // =========================
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedLang = localStorage.getItem('preferredLanguage') || 'en';
+            setLanguage(savedLang);
+            
+            // Auto-update copyright year
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+
+            // Set Min Date for Date Picker (10 AM Cut-off Logic)
+            const datePicker = document.getElementById('delivery-date');
+            const cutoffNote = document.getElementById('cutoff-note');
+            
+            if(datePicker) {
+                const now = new Date();
+                const cutoffHour = 10; // 10:00 AM Cut-off
+                const minDate = new Date();
+                
+                // If current time is after 10 AM, minimum delivery is 2 days from now.
+                // If before 10 AM, minimum delivery is tomorrow.
+                if (now.getHours() >= cutoffHour) {
+                    minDate.setDate(now.getDate() + 2);
+                    if (cutoffNote) cutoffNote.textContent = "(Orders after 10 AM require 2 days lead time)";
+                } else {
+                    minDate.setDate(now.getDate() + 1);
+                    if (cutoffNote) cutoffNote.textContent = "(Order before 10 AM for Next Day Delivery)";
+                }
+
+                datePicker.min = minDate.toISOString().split("T")[0];
+            }
+
+            // Handle Promo Visibility
+            const banner = document.getElementById('promo-banner');
+            const seasonalSection = document.getElementById('seasonal-special');
+
+            if (promotions.active) {
+                // Show Banner
+                if (banner) {
+                    banner.classList.remove('hidden');
+                    document.querySelectorAll('.promo-text-en').forEach(el => el.textContent = promotions.textEn);
+                    document.querySelectorAll('.promo-text-bm').forEach(el => el.textContent = promotions.textBm);
+                    document.querySelectorAll('.promo-text-cn').forEach(el => el.textContent = promotions.textCn);
+
+                    const track = document.getElementById('marquee-track');
+                    const content = document.getElementById('promo-content-group');
+                    if (track && content) {
+                         const clone = content.cloneNode(true);
+                         clone.removeAttribute('id');
+                         track.appendChild(clone);
+                    }
+                }
+                
+                // Show Seasonal Special Section
+                if (seasonalSection) seasonalSection.classList.remove('hidden');
+                
+            } else {
+                // Hide Banner
+                if (banner) banner.classList.add('hidden');
+                
+                // Hide Seasonal Special Section
+                if (seasonalSection) seasonalSection.classList.add('hidden');
+            }
+            
+            // Initial Holiday Warning Check
+            updateHolidayWarning();
+            
+            // Initial layout adjustment (FIXES THE BLANK ROW)
+            adjustLayoutForPromo();
+        });
+    </script>
+</body>
+</html>
