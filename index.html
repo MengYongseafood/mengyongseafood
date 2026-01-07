@@ -1228,7 +1228,15 @@ src="https://www.facebook.com/tr?id=1303382325159317&ev=PageView&noscript=1"
             }
 
             message += `%0a%0aI have made the payment to Hong Leong Bank (Meng Yong Seafood). Please find the receipt attached.`;
-
+			// --- FACEBOOK TRACKING START ---
+            // This sends the "Purchase" signal with the exact cart total
+            if (typeof fbq === 'function') { 
+                fbq('track', 'Purchase', {
+                    currency: "MYR", 
+                    value: total
+                });
+            }
+            // --- FACEBOOK TRACKING END ---
             window.open(`https://wa.me/60165250543?text=${message}`, '_blank');
         }
 
@@ -1625,6 +1633,7 @@ src="https://www.facebook.com/tr?id=1303382325159317&ev=PageView&noscript=1"
 </body>
 
 </html>
+
 
 
 
