@@ -846,18 +846,19 @@ src="https://www.facebook.com/tr?id=1303382325159317&ev=PageView&noscript=1"
         // 1. CONFIGURATION
         // =========================
         const promotions = {
-            active: false, 
+            active: true, 
             freeDelivery: true, 
             freeKnife: true,
-            textEn: "🎄 CHRISTMAS & NEW YEAR SPECIAL! Free Delivery + Free Professional Oyster Knife (Worth RM10) with purchase of RM200 or Christmas Bundle! Limited time only.",
-            textBm: "🎄 ISTIMEWA KRISMAS & TAHUN BARU! Penghantaran Percuma + Pisau Tiram Profesional Percuma (Bernilai RM10) dengan pembelian RM200 atau Pek Krismas!",
-            textCn: "🎄 圣诞与跨年特惠！消费满 RM200 或购买圣诞套餐，即享免运费 + 送价值 RM10 的专业开蚝刀！限时优惠。"
+            textEn: "🧧 CHINESE NEW YEAR PRE-ORDER! Secure your fresh oysters for the reunion dinner. Limited slots available for CNY Eve!",
+            textBm: "🧧 TEMPAHAN TAHUN BARU CINA! Dapatkan tiram segar untuk makan besar. Slot terhad!",
+            textCn: "🧧 新春佳节预订开启！团圆饭必备鲜活生蚝。除夕夜档期有限，先到先得！"
         };
         
         // --- HOLIDAY SETTINGS ---
         const holidays = [
-            "2025-12-25", // Christmas
-            "2025-12-26", // Boxing Day
+            "2026-02-17", // CNY First Day
+            "2026-02-18", // CNY Second Day
+			"2026-02-19", // CNY Third Day
             // Add more holidays here as YYYY-MM-DD
         ];
 
@@ -1625,7 +1626,7 @@ src="https://www.facebook.com/tr?id=1303382325159317&ev=PageView&noscript=1"
                 if (banner) banner.classList.add('hidden');
                 
                 // Hide Seasonal Special Section
-                if (seasonalSection) seasonalSection.classList.add('hidden');
+                // if (seasonalSection) seasonalSection.classList.add('hidden');
             }
             
             // Initial Holiday Warning Check
@@ -1638,6 +1639,7 @@ src="https://www.facebook.com/tr?id=1303382325159317&ev=PageView&noscript=1"
 </body>
 
 </html>
+
 
 
 
