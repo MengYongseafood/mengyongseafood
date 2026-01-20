@@ -95,6 +95,8 @@
         input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
         .marquee-container { display: flex; width: fit-content; }
     </style>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 	<!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -185,7 +187,7 @@ src="https://www.facebook.com/tr?id=1303382325159317&ev=PageView&noscript=1"
                         </div>
                         <div class="mb-6">
                             <label for="delivery-date" class="block text-sm font-medium text-gray-700 mb-2" data-i18n="cart_date_label">Preferred Delivery Date</label>
-                            <input type="date" id="delivery-date" class="w-full border-gray-300 rounded-md shadow-sm p-2 border" onchange="updateCartUI()">
+                            <input type="text" id="delivery-date" class="w-full border-gray-300 rounded-md shadow-sm p-2 border bg-white cursor-pointer" placeholder="Select Date" readonly>
                             <div class="flex flex-col mt-1 space-y-1">
                                 <p class="text-xs text-gray-500" id="delivery-note" data-i18n="cart_delivery_note">Delivery Fee: RM30</p>
                                 <p class="text-xs text-gray-400" id="cutoff-note"></p> <p class="text-xs text-red-500 italic" data-i18n="cart_no_monday">* No delivery on Mondays</p>
@@ -1575,32 +1577,54 @@ src="https://www.facebook.com/tr?id=1303382325159317&ev=PageView&noscript=1"
             // Auto-update copyright year
             document.getElementById('current-year').textContent = new Date().getFullYear();
 
-            // Set Min Date for Date Picker (10 AM Cut-off Logic)
-const datePicker = document.getElementById('delivery-date');
-const cutoffNote = document.getElementById('cutoff-note');
+            // ==========================================
+            // FLATPICKR CONFIGURATION (MOBILE FIX)
+            // ==========================================
+            const datePickerEl = document.getElementById('delivery-date');
+            const cutoffNote = document.getElementById('cutoff-note');
 
-if(datePicker) {
-    const now = new Date();
-    const cutoffHour = 10; // 10:00 AM Cut-off
-    const minDate = new Date();
-    
-    // If current time is after 10 AM, minimum delivery is 2 days from now.
-    // If before 10 AM, minimum delivery is tomorrow.
-    if (now.getHours() >= cutoffHour) {
-        minDate.setDate(now.getDate() + 2);
-        if (cutoffNote) cutoffNote.textContent = "(Orders after 10 AM require 2 days lead time)";
-    } else {
-        minDate.setDate(now.getDate() + 1);
-        if (cutoffNote) cutoffNote.textContent = "(Order before 10 AM for Next Day Delivery)";
-    }
+            if (datePickerEl) {
+                const now = new Date();
+                const cutoffHour = 10; // 10:00 AM
+                let minDate = new Date();
 
-    // FIX: Format YYYY-MM-DD using Local Time instead of UTC (toISOString)
-    const year = minDate.getFullYear();
-    const month = String(minDate.getMonth() + 1).padStart(2, '0'); // Months are 0-indexed
-    const day = String(minDate.getDate()).padStart(2, '0');
-    
-    datePicker.min = `${year}-${month}-${day}`;
-}
+                // 1. Calculate Minimum Date based on 10 AM Cutoff
+                if (now.getHours() >= cutoffHour) {
+                    minDate.setDate(now.getDate() + 2);
+                    if (cutoffNote) cutoffNote.textContent = "(Orders after 10 AM require 2 days lead time)";
+                } else {
+                    minDate.setDate(now.getDate() + 1);
+                    if (cutoffNote) cutoffNote.textContent = "(Order before 10 AM for Next Day Delivery)";
+                }
+
+                // 2. Initialize Flatpickr
+                flatpickr(datePickerEl, {
+                    minDate: minDate,
+                    disableMobile: true, // <--- THIS FIXES THE MOBILE ISSUE
+                    dateFormat: "Y-m-d", 
+                    disable: [
+                        function(date) {
+                            // Disable Mondays (Day 1)
+                            if (date.getDay() === 1) return true;
+
+                            // Disable Holidays (Compare YYYY-MM-DD strings)
+                            // Note: We use local time string to match your holidays array
+                            const year = date.getFullYear();
+                            const month = String(date.getMonth() + 1).padStart(2, '0');
+                            const day = String(date.getDate()).padStart(2, '0');
+                            const dateString = `${year}-${month}-${day}`;
+                            
+                            if (holidays.includes(dateString)) return true;
+
+                            return false; 
+                        }
+                    ],
+                    onChange: function(selectedDates, dateStr, instance) {
+                        updateCartUI();
+                    }
+                });
+            }
+
 
             // Handle Promo Visibility
             const banner = document.getElementById('promo-banner');
@@ -1644,7 +1668,6 @@ if(datePicker) {
 </body>
 
 </html>
-
 
 
 
