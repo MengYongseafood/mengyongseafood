@@ -187,7 +187,7 @@ src="https://www.facebook.com/tr?id=1303382325159317&ev=PageView&noscript=1"
                             <label for="delivery-date" class="block text-sm font-medium text-gray-700 mb-2" data-i18n="cart_date_label">Preferred Delivery Date</label>
                             <input type="date" id="delivery-date" class="w-full border-gray-300 rounded-md shadow-sm p-2 border" onchange="updateCartUI()">
                             <div class="flex flex-col mt-1 space-y-1">
-                                <p class="text-xs text-gray-500" id="delivery-note" data-i18n="cart_delivery_note">Delivery Fee: RM20</p>
+                                <p class="text-xs text-gray-500" id="delivery-note" data-i18n="cart_delivery_note">Delivery Fee: RM30</p>
                                 <p class="text-xs text-gray-400" id="cutoff-note"></p> <p class="text-xs text-red-500 italic" data-i18n="cart_no_monday">* No delivery on Mondays</p>
                                 <p class="text-xs text-red-600 font-bold hidden" id="holiday-warning"></p>
                             </div>
@@ -1175,7 +1175,7 @@ src="https://www.facebook.com/tr?id=1303382325159317&ev=PageView&noscript=1"
             if (!dateInput) return 0;
             
             // Flat rate
-            return 20.00;
+            return 30.00;
         }
 
         // =========================
@@ -1221,7 +1221,7 @@ src="https://www.facebook.com/tr?id=1303382325159317&ev=PageView&noscript=1"
             message += `%0aSubtotal: RM ${subtotal.toFixed(2)}`;
             
             if (promotions.active && isPromoQualified) {
-                message += `%0aDelivery Fee: RM 0.00 (Worth RM 20.00 - FREE)`;
+                message += `%0aDelivery Fee: RM 0.00 (Worth RM 30.00 - FREE)`;
             } else {
                 message += `%0aDelivery Fee: RM ${fee.toFixed(2)}`;
             }
@@ -1270,7 +1270,7 @@ src="https://www.facebook.com/tr?id=1303382325159317&ev=PageView&noscript=1"
                 testi_1_author: "Maxx", testi_1_role: "Private Customer", testi_2_text: "\"We are very satisfied with your oyster.\"", testi_2_author: "Mr Tan", testi_2_role: "Chef", testi_3_text: "\"The oyster is fresh and will repeat order again for sure!\"", testi_3_author: "Amanda Koo", testi_3_role: "Private Customer", faq_subtitle: "Common Questions", faq_title: "Everything You Need to Know",
                 faq_q1: "How do I store the oysters?", faq_a1: "Keep them in the fridge (5-8°C), cup side down, covered with a damp cloth to keep them moist. <strong>Do not</strong> store in water or an airtight container, as they need to breathe.", faq_q2: "How long do they last?", faq_a2: "For the best experience, we recommend consuming them within <strong>3-5 days</strong> of delivery. They are live animals and stay fresh as long as they are kept cool and damp.",
                 faq_q3: "Are they safe to eat raw?", faq_a3: "Yes. Our oysters are depurated (purified) using UV technology and regularly lab-tested for bacteria to meet strict food safety standards for raw consumption.", faq_q4: "Where do you deliver?", faq_a4: "We cover most major cities in West Malaysia via express next day delivery. Please WhatsApp us with your postcode to confirm coverage before ordering.",
-                badge_msia: "Proudly Malaysian", foot_contact: "Contact Us", btn_whatsapp: "WhatsApp Us", foot_explore: "Explore", link_wholesale_inq: "Wholesale Inquiry", cart_delivery_note: "Delivery Fee: RM20", cart_no_monday: "* No delivery on Mondays", cart_holiday_closure: "* Courier Closed: Dec 25 & 26"
+                badge_msia: "Proudly Malaysian", foot_contact: "Contact Us", btn_whatsapp: "WhatsApp Us", foot_explore: "Explore", link_wholesale_inq: "Wholesale Inquiry", cart_delivery_note: "Delivery Fee: RM30", cart_no_monday: "* No delivery on Mondays", cart_holiday_closure: "* Courier Closed: Dec 25 & 26"
             },
             bm: {
                 nav_about: "Tentang Kami",
@@ -1398,7 +1398,7 @@ src="https://www.facebook.com/tr?id=1303382325159317&ev=PageView&noscript=1"
                 btn_whatsapp: "WhatsApp Kami",
                 foot_explore: "Terokai",
                 link_wholesale_inq: "Pertanyaan Borong",
-                cart_delivery_note: "Caj Penghantaran: RM20",
+                cart_delivery_note: "Caj Penghantaran: RM30",
                 cart_no_monday: "* Tiada penghantaran pada hari Isnin",
                 cart_holiday_closure: "* Kurier Tutup: 25 & 26 Dis"
             },
@@ -1528,7 +1528,7 @@ src="https://www.facebook.com/tr?id=1303382325159317&ev=PageView&noscript=1"
                 btn_whatsapp: "联系 WhatsApp",
                 foot_explore: "探索",
                 link_wholesale_inq: "批发咨询",
-                cart_delivery_note: "运费: RM20",
+                cart_delivery_note: "运费: RM30",
                 cart_no_monday: "* 周一不配送",
                 cart_holiday_closure: "* 快递休息: 12月25日 & 26日"
             }
@@ -1576,26 +1576,31 @@ src="https://www.facebook.com/tr?id=1303382325159317&ev=PageView&noscript=1"
             document.getElementById('current-year').textContent = new Date().getFullYear();
 
             // Set Min Date for Date Picker (10 AM Cut-off Logic)
-            const datePicker = document.getElementById('delivery-date');
-            const cutoffNote = document.getElementById('cutoff-note');
-            
-            if(datePicker) {
-                const now = new Date();
-                const cutoffHour = 10; // 10:00 AM Cut-off
-                const minDate = new Date();
-                
-                // If current time is after 10 AM, minimum delivery is 2 days from now.
-                // If before 10 AM, minimum delivery is tomorrow.
-                if (now.getHours() >= cutoffHour) {
-                    minDate.setDate(now.getDate() + 2);
-                    if (cutoffNote) cutoffNote.textContent = "(Orders after 10 AM require 2 days lead time)";
-                } else {
-                    minDate.setDate(now.getDate() + 1);
-                    if (cutoffNote) cutoffNote.textContent = "(Order before 10 AM for Next Day Delivery)";
-                }
+const datePicker = document.getElementById('delivery-date');
+const cutoffNote = document.getElementById('cutoff-note');
 
-                datePicker.min = minDate.toISOString().split("T")[0];
-            }
+if(datePicker) {
+    const now = new Date();
+    const cutoffHour = 10; // 10:00 AM Cut-off
+    const minDate = new Date();
+    
+    // If current time is after 10 AM, minimum delivery is 2 days from now.
+    // If before 10 AM, minimum delivery is tomorrow.
+    if (now.getHours() >= cutoffHour) {
+        minDate.setDate(now.getDate() + 2);
+        if (cutoffNote) cutoffNote.textContent = "(Orders after 10 AM require 2 days lead time)";
+    } else {
+        minDate.setDate(now.getDate() + 1);
+        if (cutoffNote) cutoffNote.textContent = "(Order before 10 AM for Next Day Delivery)";
+    }
+
+    // FIX: Format YYYY-MM-DD using Local Time instead of UTC (toISOString)
+    const year = minDate.getFullYear();
+    const month = String(minDate.getMonth() + 1).padStart(2, '0'); // Months are 0-indexed
+    const day = String(minDate.getDate()).padStart(2, '0');
+    
+    datePicker.min = `${year}-${month}-${day}`;
+}
 
             // Handle Promo Visibility
             const banner = document.getElementById('promo-banner');
@@ -1639,6 +1644,7 @@ src="https://www.facebook.com/tr?id=1303382325159317&ev=PageView&noscript=1"
 </body>
 
 </html>
+
 
 
 
