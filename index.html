@@ -31,7 +31,7 @@
       "@id": "https://mengyongseafood.com/",
       "url": "https://mengyongseafood.com/",
       "telephone": "+60165250543",
-      "priceRange": "RM8 - RM12",
+      "priceRange": "RM12 - RM16",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Bagan Pasir",
@@ -139,7 +139,7 @@ src="https://www.facebook.com/tr?id=1303382325159317&ev=PageView&noscript=1"
 
     <div id="cart-modal" class="fixed inset-0 z-[70] hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
         <div class="absolute inset-0 bg-gray-900 bg-opacity-75 transition-opacity" onclick="toggleCart()"></div>
-        <div class="fixed inset-y-0 right-0 z-10 w-full max-w-md overflow-y-auto bg-white shadow-xl transform transition-transform duration-300 translate-x-full" id="cart-panel">
+        <div class="fixed inset-y-0 right-0 z-10 w-full max-w-md overflow-y-auto bg-white shadow-xl transfo transition-transfo duration-300 translate-x-full" id="cart-panel">
             <div class="flex flex-col h-full">
                 <div class="px-6 py-4 bg-oyster-dark text-white flex justify-between items-center">
                     <h2 class="text-xl font-serif" data-i18n="cart_title">Your Order</h2>
@@ -159,7 +159,7 @@ src="https://www.facebook.com/tr?id=1303382325159317&ev=PageView&noscript=1"
                     <div class="border-t border-gray-200 mt-6 pt-6">
                         <h4 class="font-bold text-oyster-dark text-sm mb-4 uppercase tracking-wide" data-i18n="cart_extras_title">Extras</h4>
                         <label class="flex items-center space-x-3 p-3 border border-gray-200 rounded-sm cursor-pointer hover:bg-gray-50 transition-colors mb-4" id="paid-knife-option">
-                            <input type="checkbox" id="addon-knife" class="form-checkbox h-5 w-5 text-sand-accent focus:ring-sand-accent rounded border-gray-300" onchange="updateCartUI()">
+                            <input type="checkbox" id="addon-knife" class="fo-checkbox h-5 w-5 text-sand-accent focus:ring-sand-accent rounded border-gray-300" onchange="updateCartUI()">
                             <div class="flex-1">
                                 <span class="text-sm font-bold text-oyster-dark block" data-i18n="addon_knife_title">Add Professional Shucker</span>
                                 <span class="text-xs text-gray-500" data-i18n="addon_knife_desc">Essential tool for opening oysters safely</span>
@@ -539,7 +539,7 @@ src="https://www.facebook.com/tr?id=1303382325159317&ev=PageView&noscript=1"
                         6 Large (The Grand) + 18 Medium (The Signature). The ultimate festive sharing platter.
                     </p>
                     <div class="flex items-center justify-between border-t border-gray-100 pt-6">
-                        <span class="text-3xl font-bold text-red-900">RM 252.00</span>
+                        <span class="text-3xl font-bold text-red-900">RM 348.00</span>
                         <div class="flex items-center border border-gray-300 rounded-sm overflow-hidden bg-white">
                             <button onclick="updateCart('prod_xmas', -1)" class="px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-600 border-r border-gray-200">-</button>
                             <input type="number" id="qty-prod_xmas" value="0" min="0" class="w-16 text-center border-none focus:ring-0 p-1 text-base font-bold text-oyster-dark appearance-none" onchange="manualUpdateCart('prod_xmas', this.value)">
@@ -579,7 +579,7 @@ src="https://www.facebook.com/tr?id=1303382325159317&ev=PageView&noscript=1"
                     </p>
                     
                     <div class="mt-4 flex items-center justify-between">
-                        <span class="text-lg font-bold text-oyster-dark">RM 8.00<span class="text-xs font-normal text-gray-500">/pc</span></span>
+                        <span class="text-lg font-bold text-oyster-dark">RM 12.00<span class="text-xs font-normal text-gray-500">/pc</span></span>
                         <div class="flex items-center border border-gray-300 rounded-sm overflow-hidden">
                             <button onclick="updateCart('prod1', -1)" class="px-3 py-2 bg-gray-100 hover:bg-gray-200 text-gray-600 border-r border-gray-200">-</button>
                             <input type="number" id="qty-prod1" value="0" min="0" class="w-12 text-center border-none focus:ring-0 p-1 text-sm font-bold text-oyster-dark appearance-none" onchange="manualUpdateCart('prod1', this.value)">
@@ -602,7 +602,7 @@ src="https://www.facebook.com/tr?id=1303382325159317&ev=PageView&noscript=1"
                     </p>
                     
                     <div class="mt-4 flex items-center justify-between">
-                        <span class="text-lg font-bold text-oyster-dark">RM 10.00<span class="text-xs font-normal text-gray-500">/pc</span></span>
+                        <span class="text-lg font-bold text-oyster-dark">RM 14.00<span class="text-xs font-normal text-gray-500">/pc</span></span>
                         <div class="flex items-center border border-gray-300 rounded-sm overflow-hidden">
                             <button onclick="updateCart('prod2', -1)" class="px-3 py-2 bg-gray-100 hover:bg-gray-200 text-gray-600 border-r border-gray-200">-</button>
                             <input type="number" id="qty-prod2" value="0" min="0" class="w-12 text-center border-none focus:ring-0 p-1 text-sm font-bold text-oyster-dark appearance-none" onchange="manualUpdateCart('prod2', this.value)">
@@ -622,7 +622,7 @@ src="https://www.facebook.com/tr?id=1303382325159317&ev=PageView&noscript=1"
                     </p>
                     
                     <div class="mt-4 flex items-center justify-between">
-                        <span class="text-lg font-bold text-oyster-dark">RM 12.00<span class="text-xs font-normal text-gray-500">/pc</span></span>
+                        <span class="text-lg font-bold text-oyster-dark">RM 16.00<span class="text-xs font-normal text-gray-500">/pc</span></span>
                         <div class="flex items-center border border-gray-300 rounded-sm overflow-hidden">
                             <button onclick="updateCart('prod3', -1)" class="px-3 py-2 bg-gray-100 hover:bg-gray-200 text-gray-600 border-r border-gray-200">-</button>
                             <input type="number" id="qty-prod3" value="0" min="0" class="w-12 text-center border-none focus:ring-0 p-1 text-sm font-bold text-oyster-dark appearance-none" onchange="manualUpdateCart('prod3', this.value)">
@@ -869,9 +869,9 @@ src="https://www.facebook.com/tr?id=1303382325159317&ev=PageView&noscript=1"
         // Product Data (Prices in RM)
         const products = {
             prod_xmas: { name: "Christmas Bundle (24pcs)", price: 252.00, qty: 0, type: "bundle", pieces: 24 },
-            prod1: { name: "The Aperitif (Cocktail)", price: 8.00, qty: 0, type: "oyster", pieces: 1 },
-            prod2: { name: "The Signature (Medium)", price: 10.00, qty: 0, type: "oyster", pieces: 1 },
-            prod3: { name: "The Grand (Large)", price: 12.00, qty: 0, type: "oyster", pieces: 1 }
+            prod1: { name: "The Aperitif (Cocktail)", price: 12.00, qty: 0, type: "oyster", pieces: 1 },
+            prod2: { name: "The Signature (Medium)", price: 14.00, qty: 0, type: "oyster", pieces: 1 },
+            prod3: { name: "The Grand (Large)", price: 16.00, qty: 0, type: "oyster", pieces: 1 }
         };
 
         // =========================
